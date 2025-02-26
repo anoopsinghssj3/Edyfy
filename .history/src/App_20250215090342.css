@@ -1,0 +1,1105 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:Root {
+    /* style variable */
+
+    /*color */
+    --material-theme-sys-light-high-contrast-surface: #F7FBEE;
+    --material-theme-sys-light-high-contrast-outline: #3D4537;
+    --material-theme-sys-light-high-contrast-on-surface: #000;
+    --material-theme-sys-light-high-contrast-surface-container-highest: #E0E4D7;
+
+    /* font-weight */
+    --lighter-Font-Weight: 400;
+    --normal-Font-Weight: 500;
+    --bold-Font-Weight: 700;
+    --bolder-Font-Weight: 900;
+
+}
+
+* {
+    font-family: "Roboto";
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    /* min-height: 100vh; */
+    box-sizing: border-box;
+    background-color: var(--material-theme-sys-light-high-contrast-surface, #F7FBEE);
+}
+
+/* page-0 */
+.home-container {
+    display: flex;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+/* sign-in-as (page-1) */
+.sign-in-as {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.sign-in-as .title {
+    position: fixed;
+    /* font-size: clamp(2rem, 12vw, 3rem); */
+    font-size: clamp(2rem, 8vw, 3.2rem);
+    text-align: center;
+    width: 35%;
+    max-width: 14.5rem;
+    min-width: 6.75rem;
+}
+
+.sign-in-as .container {
+    position: fixed;
+    top: 20%;
+    height: 40%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.sign-in-as .container .btns {
+    position: relative;
+    height: 12%;
+    width: 52%;
+    border-radius: 1.5rem;
+    overflow: hidden;
+    background: transparent;
+}
+
+.sign-in-as .container .btns svg {
+    position: relative;
+    margin-right: 7%;
+}
+
+
+/* sign-in (page-2) */
+.sign-in {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+}
+
+.sign-in .title {
+    position: relative;
+    width: 11rem;
+    display: flex;
+    flex-direction: row;
+    justify-self: center;
+    left: 1%;
+    color: var(--material-theme-sys-light-high-contrast-on-surface, #000);
+    font-weight: var(--lighter-Font-Weight);
+    line-height: 3rem;
+    top: 4%;
+    text-align: center;
+    /*clamp calc for font-size: clamp*/
+    font-size: clamp(2rem, 12vw, 3.2rem);
+}
+
+.sign-in .container {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1.25rem;
+}
+
+.sign-in .container .user-l,
+.sign-in .container .pass-l {
+    position: fixed;
+    font-weight: var(--lighter-Font-Weight);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 22rem;
+}
+
+.sign-in .container .user-l {
+    top: 256px;
+}
+
+.sign-in .container .pass-l {
+    top: 355px;
+}
+
+.sign-in .user-i,
+.sign-in .pass-i {
+    position: fixed;
+    font-weight: var(--lighter-Font-Weight);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 22rem;
+}
+
+.sign-in .user-i {
+    top: 285px;
+}
+
+.sign-in .pass-i {
+    top: 385px;
+}
+
+.sign-in .visibility {
+    position: relative;
+    top: 23rem;
+    left: 10rem;
+    background: transparent;
+}
+
+.sign-in .sign-in-btn {
+    position: fixed;
+    width: 22rem;
+    height: 3rem;
+    border-radius: 0.25rem;
+    top: 70%;
+    background: var(--material-theme-sys-light-high-contrast-primary, #0D2800);
+    color: var(--material-theme-sys-light-high-contrast-on-primary, #FFF);
+}
+
+
+/* register as admin (page-5) */
+.register-as-admin {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+}
+
+.register-as-admin .title {
+    position: fixed;
+    font-size: clamp(2rem, 9vw, 3.2rem);
+    text-align: center;
+    width: 45%;
+    max-width: 37.5rem;
+    min-width: 8.75rem;
+}
+
+.register-as-admin .container {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1.25rem;
+}
+
+.register-as-admin .container .name-l,
+.register-as-admin .container .user-l,
+.register-as-admin .container .pass-l,
+.register-as-admin .container .sec-code-l {
+    position: fixed;
+    font-weight: var(--lighter-Font-Weight);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 22rem;
+}
+
+.register-as-admin .container .name-l {
+    top: 10.375rem;
+}
+
+.register-as-admin .container .user-l {
+    top: 14.6875rem;
+}
+
+.register-as-admin .container .pass-l {
+    top: 19rem;
+}
+
+.register-as-admin .container .sec-code-l {
+    top: 23.3125rem;
+}
+
+.register-as-admin .container .name-i,
+.register-as-admin .container .user-i,
+.register-as-admin .container .pass-i,
+.register-as-admin .container .sec-code-i {
+    position: fixed;
+    font-weight: var(--lighter-Font-Weight);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 22rem;
+    border-radius: 0.25rem;
+}
+
+.register-as-admin .container .name-i {
+    top: 11.625rem;
+}
+
+.register-as-admin .container .user-i {
+    top: 15.9375rem;
+}
+
+.register-as-admin .container .pass-i {
+    top: 20.3125rem;
+}
+
+.register-as-admin .container .sec-code-i {
+    top: 24.6875rem;
+}
+
+.register-as-admin .container .visibility {
+    position: relative;
+    top: 19.3rem;
+    left: 10rem;
+    background: transparent;
+}
+
+.register-as-admin .container .sign-in-btn {
+    position: fixed;
+    width: 22rem;
+    height: 3rem;
+    border-radius: 0.25rem;
+    top: 80%;
+    background: var(--material-theme-sys-light-high-contrast-primary, #0D2800);
+    color: var(--material-theme-sys-light-high-contrast-on-primary, #FFF);
+}
+
+
+/* student home page (page-6)*/
+.student-home-page {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.student-home-page .title {
+    position: fixed;
+    font-size: clamp(2rem, 9vw, 3.2rem);
+    text-align: center;
+    width: 45%;
+    max-width: 37.5rem;
+    min-width: 8.75rem;
+}
+
+.student-home-page .container {
+    position: fixed;
+    top: clamp(25%, 30vh, 95%);
+    height: 40%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.student-home-page .container .btns {
+    position: relative;
+    min-height: 16%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45%;
+    max-width: 45%;
+    border-radius: 1.5rem;
+    overflow: auto;
+    background: transparent;
+}
+
+.student-home-page .container .btns span {
+    position: relative;
+    text-align: center;
+    border-radius: 1.5rem;
+    background: transparent;
+    width: 100%;
+}
+
+
+/* student profile to view  (page-7)*/
+.student-profile {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+.student-profile .sub-container .title {
+    position: relative;
+    display: flex;
+    justify-self: center;
+    font-size: clamp(2rem, 9vw, 3rem);
+    text-align: center;
+    width: 20%;
+    max-width: 37.5rem;
+    min-width: 8.75rem;
+    bottom: 3.4375rem;
+    left: 0.9375rem;
+}
+
+.student-profile .container {
+    position: relative;
+    background: transparent;
+    padding: 20px;
+    width: clamp(250px, 80vw, 500px);
+    border-radius: 0.625rem;
+    top: 7rem;
+    border: 0.0625rem solid black;
+}
+
+.student-profile .sub-container div {
+    text-align: center;
+}
+
+.student-profile .profile-pic {
+    display: flex;
+    justify-content: center;
+}
+
+.student-profile .profile-pic img {
+    position: relative;
+    width: 22vw;
+    /* Uses 25% of viewport width for small screens */
+    height: 22vw;
+    /* Ensures the height matches the width (keeping it square) */
+    max-width: 8.125rem;
+    /* Limits the size for larger screens */
+    max-height: 8.125rem;
+    /* Same as max-width, limiting height */
+    bottom: 1.25rem;
+    border-radius: 50%;
+    background: lightgray;
+}
+
+.student-profile form {
+    display: flex;
+    flex-direction: column;
+}
+
+.student-profile label {
+    margin-top: 0.625rem;
+    font-weight: bold;
+    position: relative;
+}
+
+.student-profile .input-type,
+.student-profile .input-type {
+    padding: 0.5rem;
+    border: 0.0625rem solid #ccc;
+    border-radius: 0.3125rem;
+    margin-top: 0.3125rem;
+    width: 100%;
+}
+
+.student-profile .input-type {
+    height: 2.5rem;
+    border: 0.0625rem solid black;
+}
+
+.student-profile .row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.student-profile .row div {
+    width: 48%;
+}
+
+.student-profile .checkbox {
+    display: flex;
+    align-items: center;
+    margin-top: 0.3125rem;
+}
+
+.student-profile .checkbox .input-type {
+    margin-right: 0.3125rem;
+}
+
+.student-profile button {
+    background-color: #2c6db6;
+    color: white;
+    border: none;
+    padding: 0.625rem;
+    margin-top: 0.9375rem;
+    border-radius: 0.3125rem;
+    cursor: pointer;
+}
+
+.student-profile .container .same-as-parent-i,
+.student-profile .container .same-as-parent-l {
+    position: relative;
+    bottom: 4.9375rem;
+}
+
+.student-profile .container .same-as-parent-i {
+    left: 3.4375rem;
+}
+
+.student-profile .container .same-as-parent-l {
+    right: 3.125rem;
+    width: 6.25rem;
+    font-size: 0.625rem;
+}
+
+.student-profile button:hover {
+    background-color: #1d4f87;
+}
+
+.student-profile .back-arrow {
+    text-decoration: none;
+    font-size: 1.5rem;
+    display: block;
+    text-align: left;
+    margin-bottom: 0.625rem;
+    color: black;
+}
+
+
+/* attendance  (page-8)*/
+.attendance {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    width: 100vw;
+    bottom: 2%;
+}
+
+.attendance .container {
+    text-align: center;
+    width: 100%;
+    max-height: 89%;
+    max-width: 400px;
+    background: transparent;
+
+}
+
+.attendance .upper-side {
+    position: relative;
+    padding: 20px;
+    height: 12vh;
+    bottom: 30px;
+    border-top-left-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
+    border: 1px solid black;
+    border-bottom: none;
+}
+
+.attendance .sub-container {
+    padding: 0.5rem;
+    position: relative;
+    bottom: 1.9rem;
+    height: 55.5vh;
+    border: 1px solid black;
+    border-bottom-right-radius: 1.5rem;
+    border-bottom-left-radius: 1.5rem;
+}
+
+.attendance .title {
+    position: relative;
+    bottom: 2.25rem;
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.attendance .more-info-btn {
+    position: relative;
+    border: none;
+    bottom: 3.25rem;
+    left: 11.7rem;
+    background: transparent;
+}
+
+.attendance .more-info-l {
+    position: relative;
+    bottom: 2rem;
+    left: 9rem;
+    font-size: 0.75rem;
+}
+
+.attendance .month-year {
+    position: relative;
+    font-size: 24px;
+    right: 80px;
+    font-weight: bold;
+    margin: 10px 0;
+    bottom: 1rem;
+}
+
+.attendance .date-calender {
+    position: relative;
+    left: 60px;
+    top: 1.5rem;
+    left: 5rem;
+    background: transparent;
+    border-radius: 1.5rem;
+    padding: 0 0.25rem;
+}
+
+.attendance .days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    font-weight: bold;
+    margin-bottom: 2px;
+    position: relative;
+    bottom: 0.45rem;
+}
+
+.attendance .days div {
+    margin: 0.25rem;
+    border-radius: 50%;
+}
+
+.attendance .day,
+.attendance .dates span {
+    text-align: center;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 50%;
+}
+
+.attendance .dates span {
+    position: relative;
+    bottom: 0.7rem;
+}
+
+.attendance .select-date {
+    position: relative;
+    bottom: 1rem;
+    right: 4rem;
+    font-size: 0.75rem;
+    font-weight: 500;
+}
+
+.attendance .dates {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 4px;
+    height: 40vh;
+}
+
+.attendance .holiday {
+    color: red;
+    border: 2px solid red;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.attendance .absent {
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.attendance .yellow {
+    background-color: gold;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.attendance button.btn {
+    margin-top: 1.5rem;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 1.5rem;
+    width: 85%;
+}
+
+.attendance button.btn:hover {
+    background-color: #0056b3;
+}
+
+.attendance .back-arrow {
+    text-decoration: none;
+    font-size: 24px;
+    display: block;
+    text-align: left;
+    color: black;
+}
+
+/* various color roles (page-9)*/
+.various-color-roles {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.various-color-roles .container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.various-color-roles .card {
+    background: transparent;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: left;
+}
+
+.various-color-roles .title {
+    margin-bottom: 15px;
+    position: relative;
+    right: 20px;
+    text-align: center;
+    font-size: 28px;
+    font-weight: 500;
+    width: 299.5px;
+}
+
+.various-color-roles .role {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.various-color-roles .circle {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.various-color-roles .black {
+    background-color: black;
+    color: white;
+}
+
+.various-color-roles .yellow {
+    background-color: gold;
+    color: black;
+}
+
+.various-color-roles .red-outline {
+    border: 2px solid red;
+    color: black;
+}
+
+.various-color-roles .red {
+    background-color: red;
+    color: white;
+}
+
+.various-color-roles .outline {
+    border: 2px solid black;
+    color: black;
+}
+
+/* student attendance summary (page-10,11)*/
+.student-attendance-summary {
+    position: relative;
+    min-width: 100vw;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    overflow-x: hidden;
+    top: 1%;
+    /* left: 50%; */
+}
+
+.student-attendance-summary .title {
+    position: relative;
+    bottom: 2.85rem;
+    font-size: clamp(1.35rem, 2vw, 3rem);
+}
+
+.student-attendance-summary .more-info-btn {
+    position: relative;
+    border: none;
+    left: 28%;
+    background: transparent;
+    bottom: 0.2rem;
+}
+
+.student-attendance-summary .more-info-btn img {
+    height: 1.1rem;
+    width: 1.1rem;
+}
+
+
+.student-attendance-summary .container {
+    position: relative;
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+}
+
+.student-attendance-summary .card {
+    background: transparent;
+    padding: 1rem;
+    border-radius: 10px;
+    text-align: center;
+    width: clamp(250px, 80vw, 500px);
+    height: 46rem;
+}
+
+.student-attendance-summary .year-selector {
+    position: relative;
+    bottom: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.student-attendance-summary .arrow {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 0 10px;
+    cursor: pointer;
+}
+
+.student-attendance-summary .year {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.student-attendance-summary .attendance-list {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.student-attendance-summary .month {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+.student-attendance-summary .view-button {
+    position: relative;
+    display: flex;
+    align-self: center;
+    padding: 10px;
+    width: 80%;
+    justify-content: center;
+    background: transparent;
+    border: 1px solid black;
+    border-radius: 1.5rem;
+    top: 1rem;
+}
+
+.student-attendance-summary .back-arrow {
+    text-decoration: none;
+    font-size: 24px;
+    display: block;
+    text-align: left;
+    margin-bottom: 10px;
+    color: black;
+}
+
+/* academic reports (page-12)*/
+.academic-reports {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.academic-reports .container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.academic-reports .card {
+    background: transparent;
+    padding: 20px;
+    border-radius: 10px;
+    width: 350px;
+    text-align: center;
+    border: none;
+}
+
+.academic-reports .title {
+    position: relative;
+    bottom: 2rem;
+    width: 295px;
+    height: 44px;
+    font-size: clamp(2.25rem, 2.5vw, 3rem);
+}
+
+.academic-reports .name {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.academic-reports label {
+    font-size: 16px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.academic-reports select {
+    position: relative;
+    left: 6.75rem;
+    width: 30%;
+    padding: 8px;
+    font-size: 16px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    background: transparent;
+}
+
+.academic-reports .test-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.academic-reports .test-btn {
+    position: relative;
+    top: 1rem;
+    width: 65%;
+    padding: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    border: 1px solid black;
+    border-radius: 1.5rem;
+    background: transparent;
+    cursor: pointer;
+}
+
+.academic-reports .test-btn:hover {
+    background: #007BFF;
+    color: white;
+}
+
+.academic-reports .back-arrow {
+    text-decoration: none;
+    font-size: 24px;
+    display: block;
+    text-align: left;
+    margin-bottom: 10px;
+    color: black;
+    width: 0.5rem;
+    position: relative;
+    right: 2rem;
+    top: 1rem;
+}
+
+/* academic reports marks page-12,13,14 */
+.academic-reports-marks {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    height: fit-content;
+    top: 1%;
+    margin-bottom: 2%;
+}
+
+.academic-reports-marks .container {
+    width: 90%;
+    max-width: 800px;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 8px;
+}
+
+.academic-reports-marks .container .sub-card div,
+.academic-reports-marks .container .sub-card p {
+    position: relative;
+    bottom: 1.5rem;
+    height: 5rem;
+    height: fit-content;
+}
+
+.academic-reports-marks .card {
+    position: relative;
+    background: transparent;
+    height: fit-content;
+}
+
+.academic-reports-marks .card .title {
+    margin-bottom: 10px;
+    font-size: clamp(2.25rem, 2.5vw, 3rem);
+}
+
+.academic-reports-marks .card .sub-title {
+    font-size: clamp(2rem, 2.5vw, 2.5rem);
+}
+
+.academic-reports-marks p {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.academic-reports-marks table {
+    position: relative;
+    width: 100%;
+    border-collapse: collapse;
+    /* bottom: 1rem; */
+    margin-bottom: 0;
+}
+
+.academic-reports-marks table,
+.academic-reports-marks th,
+.academic-reports-marks td {
+    border: 1px solid #000;
+}
+
+.academic-reports-marks th,
+.academic-reports-marks td {
+    padding: 4px;
+    text-align: center;
+}
+
+.academic-reports-marks th {
+    background: transparent;
+}
+
+.academic-reports-marks .total-row {
+    background: transparent;
+}
+
+.academic-reports-marks .grade-row {
+    background: transparent;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 39% 86% auto;
+}
+
+.academic-reports-marks button {
+    margin-top: 20px;
+    font-size: 18px;
+    cursor: pointer;
+    border: 2px solid black;
+    border-radius: 1.5rem;
+    background: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-self: end;
+}
+
+.academic-reports-marks button:hover {
+    background: darkblue;
+}
+
+.academic-reports-marks .back-arrow {
+    text-decoration: none;
+    position: relative;
+    left: 5px;
+    font-size: 24px;
+    display: block;
+    text-align: left;
+    margin-bottom: 10px;
+    color: black;
+}
+
+
+
+
+
+
+
+
+
+
+/* class teacher home page (page-21) */
+.class-teacher-home-page {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    min-height: 100vh;
+}
+
+.title-container {
+    background: transparent;
+    text-align: center;
+    padding: 1rem;
+    flex: 0 1 auto;
+    font-weight: clamp(800, 2vw, 600);
+
+}
+
+.title {
+    font-size: clamp(2.25rem, 2.5vw, 3rem);
+}
+
+.cs {
+    width: 60px;
+    height: 40px;
+    display: flex;
+    border-radius: 50%;
+    justify-content: left;
+    justify-content: right;
+    width: auto;
+    padding: 0%;
+    margin: 1rem 0 0 0;
+}
+
+.btn-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.btn-group button {
+    margin: 0.5rem;
+    padding: 1rem;
+    font-size: 1rem;
+    border: cover;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    width: 80%;
+    max-width: 300px;
+    border-radius: 10px;
+}
+
+.btn-group button:hover {
+    background-color: #45a049;
+}
+
+/* 
+@media (min-width: 600px) {
+    .btn-group {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .btn-group button {
+        width: 40%;
+    }
+} */

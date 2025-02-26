@@ -1,0 +1,14 @@
+import React from 'react'
+
+function StudentHomePage() {
+    return (
+        <div className='student-home-page'>
+            <div className="title">
+                Welcome , rajubanumasalisor chaturvedi
+            </div>
+
+        </div>
+    )
+}
+
+export default StudentHomePage
