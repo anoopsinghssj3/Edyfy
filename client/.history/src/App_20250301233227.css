@@ -2049,6 +2049,7 @@ body {
 
 .manage-class-teacher .container {
     width: 90%;
+    background-color: red;
     height: 100%;
     padding: 20px;
     display: flex;

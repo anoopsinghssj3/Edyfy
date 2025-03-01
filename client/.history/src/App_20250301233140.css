@@ -2057,7 +2057,13 @@ body {
     overflow: auto;
 }
 
-.manage-class-teacher .container .back-button {
+.manage-class-teacher .title {
+    font-size: clamp(2.25rem, 8vw, 3.2rem);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.manage-class-teacher .back-button {
     position: absolute;
     left: 12%;
     top: 20px;
@@ -2065,11 +2071,6 @@ body {
     border: none;
     font-size: 24px;
     cursor: pointer;
-}
-.manage-class-teacher .title {
-    font-size: clamp(2.25rem, 8vw, 3.2rem);
-    margin-bottom: 20px;
-    text-align: center;
 }
 
 .manage-class-teacher table {
