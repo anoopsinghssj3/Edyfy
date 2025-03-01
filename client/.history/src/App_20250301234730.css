@@ -2119,15 +2119,12 @@ body {
     text-align: left;
 }
 
-.all-teacher .container .title {
+.all-teacher .title {
     text-align: center;
     font-size: clamp(2.25rem, 8vw, 3.2rem);
 }
 
-.all-teacher .container .back-btn {
-    position: relative;
-    bottom: 5rem;
-}
+.all-teacher .back-btn {}
 
 .all-teacher .sub-title {
     margin-top: 15px;
@@ -2151,11 +2148,12 @@ body {
 .all-teacher .circle {
     width: 30px;
     height: 30px;
+    background: white;
     border: 2px solid black;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-weight: bold;
     margin-right: 10px;
-    font-size: 14px;
 }
