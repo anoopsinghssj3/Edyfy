@@ -1968,14 +1968,14 @@ body {
 .select-class-for-attendance .container {
     border-radius: 10px;
     text-align: center;
-    width: 350px;
+    width: 300px;
     position: relative;
     height: 100vh;
 }
 
 .select-class-for-attendance .container .back-btn {
     position: relative;
-    right: 11rem;
+    right: 10rem;
     top: 2.5rem;
     background: none;
     border: none;
@@ -1985,7 +1985,7 @@ body {
 
 .select-class-for-attendance .title {
     margin-bottom: 20px;
-    font-size: clamp(2.25rem, 8vw, 3.2rem);
+    font-size: clamp(2.5rem, 9vw, 3rem);
 
 }
 
@@ -1993,11 +1993,6 @@ body {
     display: flex;
     justify-content: space-between;
     margin-top: 30%;
-}
-
-
-.select-class-for-attendance .dropdowns label {
-    font-size: clamp(1rem, 2vw, 1.25rem);
 }
 
 .select-class-for-attendance .dropdown {

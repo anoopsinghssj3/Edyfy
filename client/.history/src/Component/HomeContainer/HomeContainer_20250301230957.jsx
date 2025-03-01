@@ -41,8 +41,8 @@ function HomeContainer() {
             {/* <SelectStudentAddReport/> */}
             {/* <AddReport/> */}
             {/* <AddReportofExam /> */}
-            {/* <AdminHomePage/> */}
-            <SelectClassForAttendance/>
+            <AdminHomePage/>
+            {/* <SelectClassForAttendance/> */}
         
         </div>
     )

@@ -1995,11 +1995,6 @@ body {
     margin-top: 30%;
 }
 
-
-.select-class-for-attendance .dropdowns label {
-    font-size: clamp(1rem, 2vw, 1.25rem);
-}
-
 .select-class-for-attendance .dropdown {
     display: flex;
     flex-direction: column;

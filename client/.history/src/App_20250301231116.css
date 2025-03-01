@@ -1975,7 +1975,7 @@ body {
 
 .select-class-for-attendance .container .back-btn {
     position: relative;
-    right: 11rem;
+    right: 10rem;
     top: 2.5rem;
     background: none;
     border: none;
@@ -1993,11 +1993,6 @@ body {
     display: flex;
     justify-content: space-between;
     margin-top: 30%;
-}
-
-
-.select-class-for-attendance .dropdowns label {
-    font-size: clamp(1rem, 2vw, 1.25rem);
 }
 
 .select-class-for-attendance .dropdown {

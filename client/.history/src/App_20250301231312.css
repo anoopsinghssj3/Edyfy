@@ -1996,9 +1996,7 @@ body {
 }
 
 
-.select-class-for-attendance .dropdowns label {
-    font-size: clamp(1rem, 2vw, 1.25rem);
-}
+.select-class-for-attendance .dropdowns label{}
 
 .select-class-for-attendance .dropdown {
     display: flex;
