@@ -1,0 +1,5 @@
+{
+    "editor.cursorStyle": "line-thin",
+    "terminal.integrated.cursorStyle": "line",
+    "editor.overtypeCursorStyle": "line"
+}
