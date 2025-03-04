@@ -48,9 +48,9 @@ function HomeContainer() {
             {/* <AdminHomePage/> */}
             {/* <SelectClassForAttendance/> */}
             {/* <ManageClassTeacher /> */}
-            {/* <Allteacher /> */}
+            <Allteacher />
             {/* <MarkHoliday/> */}
-            <AddTeacher />
+            {/* <AddTeacher /> */}
         </div>
     )
 }

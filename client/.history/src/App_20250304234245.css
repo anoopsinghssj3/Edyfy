@@ -2324,10 +2324,11 @@ body {
     padding: 20px;
     box-sizing: border-box;
     overflow: auto;
+    /* background-color: red; */
 }
 
-.add-teacher .title {
-    font-size: clamp(2.25rem, 8vw, 3.2rem);
+.add-teacher h1 {
+    margin-bottom: 20px;
 }
 
 .add-teacher form {
@@ -2345,23 +2346,20 @@ body {
 .add-teacher input {
     padding: 10px;
     margin-bottom: 15px;
-    border: 1px solid black;
+    border: 1px solid #ccc;
     border-radius: 5px;
     width: 100%;
-    background: transparent;
-    height: 36px;
 }
 
 .add-teacher button {
     padding: 12px;
-    border-radius: 3px;
-    background: var(--material-theme-sys-light-high-contrast-primary, #0D2800);
+    background-color: black;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
-    margin-top: 45%;
+
 }
 
 .add-teacher button:hover {
@@ -2373,4 +2371,65 @@ body {
     display: flex;
     align-self: flex-start;
     bottom: 4rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 90%;
+    max-width: 500px;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: left;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    margin-top: 15px;
+    border-bottom: 2px solid black;
+    display: inline-block;
+    font-size: 18px;
+}
+
+.teacher-list {
+    list-style: none;
+    margin-top: 10px;
+}
+
+.teacher-list li {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.circle {
+    width: 30px;
+    height: 30px;
+    background: white;
+    border: 2px solid black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    margin-right: 10px;
 }

@@ -2324,6 +2324,7 @@ body {
     padding: 20px;
     box-sizing: border-box;
     overflow: auto;
+    /* background-color: red; */
 }
 
 .add-teacher .title {
