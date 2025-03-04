@@ -21,7 +21,6 @@ import AdminHomePage from '../../Context/AdminHomePage/AdminHomePage'
 import SelectClassForAttendance from '../../Context/SelectClassForAttendance/SelectClassForAttendance'
 import ManageClassTeacher from '../../Context/ManageClassTeacher/ManageClassTeacher'
 import Allteacher from '../../Context/AllTeacher/Allteacher'
-import MarkHoliday from '../../Context/MarkHoliday/MarkHoliday'
 
 function HomeContainer() {
     return (
@@ -48,7 +47,6 @@ function HomeContainer() {
             {/* <SelectClassForAttendance/> */}
             {/* <ManageClassTeacher /> */}
             {/* <Allteacher /> */}
-            <MarkHoliday/>
 
         </div>
     )

@@ -2174,7 +2174,7 @@ body {
     position: relative;
     top: 5%;
     width: 90%;
-    max-width: 600px;
+    max-width: 400px;
     padding: 20px;
     text-align: center;
     border-radius: 10px;
@@ -2187,16 +2187,7 @@ body {
     font-size: clamp(2.25rem, 8vw, 3.2rem);
 }
 
-.mark-holiday .container .calendra-btns{
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    justify-self:right;
-    /* right: 2rem; */
-    bottom: 2.75rem;
-}
-
-.mark-holiday .container .month-selector {
+.mark-holiday .month-selector {
     font-size: 16px;
     position: relative;
     display: flex;
@@ -2204,16 +2195,14 @@ body {
     justify-self: left;
     font-weight: bold;
     margin-bottom: 10px;
-    /* left: 2rem; */
+    left: 2rem;
 }
 
 .mark-holiday .month-selector select {
     font-size: 16px;
     font-weight: bold;
     margin-bottom: 10px;
-    background: transparent;
-    text-align: center;
-    border: none;
+    background:transparent;
 }
 
 .mark-holiday select {
@@ -2222,15 +2211,11 @@ body {
 }
 
 .mark-holiday p {
-    position: relative;
-    bottom: 1rem;
     font-size: 16px;
     margin-bottom: 10px;
 }
 
 .mark-holiday .calendar {
-    position: relative;
-    bottom: 1rem;
     display: flex;
     justify-content: center;
 }
@@ -2257,7 +2242,7 @@ body {
 .mark-holiday .button-group {
     position: relative;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     margin-top: 15px;
 }
 
@@ -2266,10 +2251,10 @@ body {
     color: white;
     padding: 10px;
     border: none;
-    border-radius: 1.5rem;
+    border-radius: 5px;
     font-size: 16px;
     cursor: pointer;
-    width: 20%;
+    width: 40%;
 }
 
 .mark-holiday .save-btn:hover {
