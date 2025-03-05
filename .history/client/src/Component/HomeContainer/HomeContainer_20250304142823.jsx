@@ -22,7 +22,6 @@ import SelectClassForAttendance from '../../Context/SelectClassForAttendance/Sel
 import ManageClassTeacher from '../../Context/ManageClassTeacher/ManageClassTeacher'
 import Allteacher from '../../Context/AllTeacher/Allteacher'
 import MarkHoliday from '../../Context/MarkHoliday/MarkHoliday'
-import AddTeacher from '../../Context/AddTeacher/AddTeacher'
 
 function HomeContainer() {
     return (
@@ -49,8 +48,8 @@ function HomeContainer() {
             {/* <SelectClassForAttendance/> */}
             {/* <ManageClassTeacher /> */}
             {/* <Allteacher /> */}
-            {/* <MarkHoliday/> */}
-            <AddTeacher />
+            <MarkHoliday/>
+
         </div>
     )
 }

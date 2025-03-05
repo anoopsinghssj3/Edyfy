@@ -2314,8 +2314,7 @@ body {
 .add-teacher .container {
     position: relative;
     top: 4%;
-    width: 90%;
-    max-width: 600px;
+    width: 100%;
     height: fit-content;
     display: flex;
     flex-direction: column;
@@ -2326,8 +2325,8 @@ body {
     overflow: auto;
 }
 
-.add-teacher .title {
-    font-size: clamp(2.25rem, 8vw, 3.2rem);
+.add-teacher h1 {
+    margin-bottom: 20px;
 }
 
 .add-teacher form {
@@ -2345,32 +2344,27 @@ body {
 .add-teacher input {
     padding: 10px;
     margin-bottom: 15px;
-    border: 1px solid black;
+    border: 1px solid #ccc;
     border-radius: 5px;
     width: 100%;
-    background: transparent;
-    height: 36px;
 }
 
 .add-teacher button {
     padding: 12px;
-    border-radius: 3px;
-    background: var(--material-theme-sys-light-high-contrast-primary, #0D2800);
+    background-color: black;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
-    margin-top: 45%;
+
 }
 
 .add-teacher button:hover {
     background-color: #333;
 }
 
-.add-teacher .container .back-btn {
+.add-teacher .back-btn {
     position: relative;
-    display: flex;
-    align-self: flex-start;
-    bottom: 4rem;
+    background-color: #45a049;
 }
