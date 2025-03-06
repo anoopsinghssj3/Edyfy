@@ -2377,7 +2377,7 @@ body {
 
 
 /* add-class page(40) */
-.add-class {
+.select-class-for-attendance {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -2385,7 +2385,7 @@ body {
     width: 100vw;
 }
 
-.add-class .container {
+.select-class-for-attendance .container {
     border-radius: 10px;
     text-align: center;
     width: 350px;
@@ -2393,7 +2393,7 @@ body {
     height: 100vh;
 }
 
-.add-class .container .back-btn {
+.select-class-for-attendance .container .back-btn {
     position: relative;
     right: 11rem;
     top: 2.5rem;
@@ -2403,34 +2403,35 @@ body {
     cursor: pointer;
 }
 
-.add-class .title {
+.select-class-for-attendance .title {
     margin-bottom: 20px;
     font-size: clamp(2.25rem, 8vw, 3.2rem);
 
 }
 
-.add-class .dropdowns {
+.select-class-for-attendance .dropdowns {
     display: flex;
     justify-content: space-between;
     margin-top: 30%;
 }
 
-.add-class .dropdowns label {
+
+.select-class-for-attendance .dropdowns label {
     font-size: clamp(1rem, 2vw, 1.25rem);
 }
 
-.add-class .dropdown {
+.select-class-for-attendance .dropdown {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.add-class label {
+.select-class-for-attendance label {
     font-size: 14px;
     margin-bottom: 5px;
 }
 
-.add-class select {
+.select-class-for-attendance select {
     padding: 8px;
     font-size: 16px;
     border: 1px solid #ccc;
@@ -2439,7 +2440,7 @@ body {
     text-align: center;
 }
 
-.add-class .view-btn {
+.select-class-for-attendance .view-btn {
     border-radius: 3px;
     color: white;
     background: var(--material-theme-sys-light-high-contrast-primary, #0D2800);
@@ -2452,6 +2453,6 @@ body {
     cursor: pointer;
 }
 
-.add-class .view-btn:hover {
+.select-class-for-attendance .view-btn:hover {
     background: #333;
 }
