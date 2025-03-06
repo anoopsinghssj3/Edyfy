@@ -24,7 +24,6 @@ import Allteacher from '../../Context/AllTeacher/Allteacher'
 import MarkHoliday from '../../Context/MarkHoliday/MarkHoliday'
 import AddTeacher from '../../Context/AddTeacher/AddTeacher'
 import AddClass from '../../Context/AddClass/AddClass'
-import ContactDeveloper from '../../Context/ContactDeveloper/ContactDeveloper'
 
 function HomeContainer() {
     return (
@@ -54,7 +53,6 @@ function HomeContainer() {
             {/* <MarkHoliday/> */}
             {/* <AddTeacher /> */}
             {/* <AddClass /> */}
-            <ContactDeveloper/>
         </div>
     )
 }

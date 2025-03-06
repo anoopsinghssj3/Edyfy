@@ -2461,12 +2461,12 @@ body {
 .contact-developer {
     display: flex;
     justify-content: center;
+    align-items: center;
     height: 100vh;
     width: 100vw;
 }
 
 .contact-developer .container {
-    height: 100vh;
     height: fit-content;
     padding: 20px;
     width: 90%;
@@ -2476,10 +2476,11 @@ body {
 }
 
 .contact-developer .title {
-    display: flex;
-    justify-self: center;
+    display: inline;
+
     width: 80%;
     font-size: clamp(2.25rem, 8vw, 3.2rem);
+    background-color: red;
 }
 
 .contact-developer label {
@@ -2502,7 +2503,7 @@ body {
 
 .contact-developer .back-button {
     position: absolute;
-    top: 10%;
+    top: 10px;
     left: 10px;
     font-size: 20px;
     text-decoration: none;

@@ -2458,39 +2458,39 @@ body {
 
 
 /*  contact developer page-41 */
-.contact-developer {
+.contact-developer{
     display: flex;
     justify-content: center;
+    align-items: center;
     height: 100vh;
     width: 100vw;
 }
-
-.contact-developer .container {
-    height: 100vh;
-    height: fit-content;
+.contact-developer
+.container {
+    background: white;
     padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 90%;
-    max-width: 600px;
+    max-width: 400px;
     text-align: center;
     position: relative;
 }
-
-.contact-developer .title {
-    display: flex;
-    justify-self: center;
-    width: 80%;
-    font-size: clamp(2.25rem, 8vw, 3.2rem);
+.contact-developer
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
 }
-
-.contact-developer label {
+.contact-developer
+label {
     display: block;
     text-align: left;
     font-size: 14px;
     margin-top: 10px;
     font-weight: bold;
 }
-
-.contact-developer input {
+.contact-developer
+input {
     width: 100%;
     padding: 10px;
     margin-top: 5px;
@@ -2499,10 +2499,10 @@ body {
     font-size: 16px;
     text-align: center;
 }
-
-.contact-developer .back-button {
+.contact-developer
+.back-button {
     position: absolute;
-    top: 10%;
+    top: 10px;
     left: 10px;
     font-size: 20px;
     text-decoration: none;

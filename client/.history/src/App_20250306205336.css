@@ -2461,6 +2461,7 @@ body {
 .contact-developer {
     display: flex;
     justify-content: center;
+    align-items: center;
     height: 100vh;
     width: 100vw;
 }
@@ -2502,7 +2503,7 @@ body {
 
 .contact-developer .back-button {
     position: absolute;
-    top: 10%;
+    top: 10px;
     left: 10px;
     font-size: 20px;
     text-decoration: none;
