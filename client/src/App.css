@@ -1053,9 +1053,107 @@ body {
     color: black;
 }
 
+/* chats page-15 */
+.chats {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.chats .container {
+    position: relative;
+    width: 95%;
+    max-width: 600px;
+    padding: 0.5rem;
+}
+
+.chats .header {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.chats .container .back-btn {
+    position: relative;
+    cursor: pointer;
+    top: 2.5rem;
+}
+
+.chats .container .header .title,
+.chats .container .header .sub-title {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.chats .title {
+    align-items: center;
+    font-size: clamp(2.25rem, 8vw, 3.2rem);
+}
+
+.chats .sub-title {
+    align-items: start;
+    font-size: clamp(1.5rem, 2.5vw, 2.5rem);
+}
 
 
+.chats .chat-list {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.5rem;
+}
 
+.chats .chat {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.chats .chat-icon {
+    width: 50px;
+    height: 50px;
+    background-color: #ccc;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: none;
+}
+
+.chats .chat-info {
+    flex: 1;
+    background: transparent;
+    border: none;
+    text-align: left;
+}
+
+.chats .chat-info h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.chats .chat-info p {
+    font-size: 14px;
+    color: gray;
+}
+
+.chats .chat-list .chat .chat-meta {
+    display: flex;
+    flex-direction: row;
+    width: 22%;
+}
+ 
+.chats .chat-meta svg {
+   display: flex;
+   align-self: flex-start;
+} 
+
+.chats .chat-time {
+    display: flex;
+    font-size: 14px;
+    color: gray;
+    align-self: flex-end;
+}
 
 
 
@@ -2473,6 +2571,10 @@ body {
     max-width: 600px;
     text-align: center;
     position: relative;
+}
+
+.contact-developer .sub-container {
+    margin-top: 10rem;
 }
 
 .contact-developer .title {
