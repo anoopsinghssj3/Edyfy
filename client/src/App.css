@@ -1171,6 +1171,144 @@ body {
     border: none;
 }
 
+/* specific-chat page-16,17 */
+.specific-chat {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.specific-chat .chat-container {
+    width: 90%;
+    max-width: 600px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.specific-chat .sub-title {
+    font-size: clamp(1.375rem, 2.5vw, 2rem);
+    text-align: left;
+    width: 50%;
+}
+
+.specific-chat .chat-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    color: rgb(18, 16, 16);
+    font-size: 18px;
+}
+
+.specific-chat .back-arrow {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+.specific-chat .chat-icons svg {
+    margin-left: 2px;
+    cursor: pointer;
+}
+
+.specific-chat .chat-messages {
+    flex: 1;
+    padding: 15px;
+    overflow-y: auto;
+}
+
+.specific-chat .message {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.specific-chat .message .avatar {
+    width: 40px;
+    height: 40px;
+    background-color: gray;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.specific-chat .text {
+    padding: 10px 15px;
+    border-radius: 10px;
+    max-width: 70%;
+    font-size: 16px;
+}
+
+.specific-chat .received .text {
+    background: var(--material-theme-sys-light-high-contrast-surface-container-high, #E6EADD);
+}
+
+.specific-chat .sent {
+    align-self: flex-end;
+    color: white;
+    background: var(--material-theme-sys-light-high-contrast-secondary, #102804);
+}
+
+.specific-chat .image-message {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-bottom: 10px;
+}
+
+.specific-chat .image-preview {
+    width: 200px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 14px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
+
+.specific-chat .chat-time {
+    text-align: center;
+    color: gray;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.specific-chat .chat-footer {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background: var(--material-theme-sys-light-high-contrast-surface-container, #ECEFE2);
+    border-top: 1px solid #ddd;
+}
+
+.specific-chat .chat-footer svg{
+margin-left: 0.75rem;
+}
+
+.specific-chat .chat-footer input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    margin: 0 10px;
+    background: var(--material-theme-sys-light-high-contrast-surface-container, #e0e4d4);
+}
+
+.specific-chat .chat-footer .send-mic {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    background-color: rgb(25, 59, 25);
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+
 
 /* class teacher home page (page-21) */
 .class-teacher-home-page {

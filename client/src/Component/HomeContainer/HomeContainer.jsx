@@ -26,6 +26,7 @@ import AddTeacher from '../../Context/AddTeacher/AddTeacher'
 import AddClass from '../../Context/AddClass/AddClass'
 import ContactDeveloper from '../../Context/ContactDeveloper/ContactDeveloper'
 import Chats from '../../Context/Chats/Chats'
+import SpecificChat from '../../Context/SpecificChat/SpecificChat'
 
 function HomeContainer() {
     return (
@@ -56,7 +57,8 @@ function HomeContainer() {
             {/* <AddTeacher /> */}
             {/* <AddClass /> */}
             {/* <ContactDeveloper/> */}
-            <Chats/>
+            {/* <Chats/> */}
+            <SpecificChat/>
         </div>
     )
 }
