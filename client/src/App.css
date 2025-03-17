@@ -60,7 +60,7 @@ body {
 .sign-in-as .container {
     position: fixed;
     top: 20%;
-    height: 40%;
+    height: 45%;
     width: 60%;
     display: flex;
     flex-direction: column;
@@ -68,7 +68,8 @@ body {
     align-items: center;
 }
 
-.sign-in-as .container .btns {
+.sign-in-as .container .btns,
+.sign-in-as .register-admin {
     position: relative;
     height: 12%;
     width: 52%;
@@ -80,6 +81,20 @@ body {
 .sign-in-as .container .btns svg {
     position: relative;
     margin-right: 7%;
+}
+
+.sign-in-as .or {
+    color: var(--material-theme-sys-light-high-contrast-on-surface, #000);
+    text-align: center;
+    font-size: var(--Headline-Large-Size, 32px);
+    font-weight: 400;
+    margin-top: 1rem;
+}
+
+.sign-in-as .register-admin {
+    height: 13%;
+    background: var(--material-theme-sys-light-high-contrast-primary, #0D2800);
+    color: var(--material-theme-sys-light-high-contrast-on-primary, #FFF);
 }
 
 
@@ -1286,8 +1301,8 @@ body {
     border-top: 1px solid #ddd;
 }
 
-.specific-chat .chat-footer svg{
-margin-left: 0.75rem;
+.specific-chat .chat-footer svg {
+    margin-left: 0.75rem;
 }
 
 .specific-chat .chat-footer input {
@@ -1386,24 +1401,23 @@ margin-left: 0.75rem;
     background-color: #45a049;
 }
 
-/* students profile page-22 */
-.students-profile {
+/* all student page-22 */
+.all-student {
     margin: 0;
     padding: 0;
     width: 100vw;
     height: 100vh;
 }
 
-.students-profile .container {
+.all-student .container {
     max-width: 800px;
     width: 100%;
     padding: 20px;
     border-radius: 5px;
 }
 
-.students-profile .title {
+.all-student .title {
     font-size: clamp(2.25rem, 2.5vw, 3rem);
-
     position: relative;
     display: flex;
     justify-self: center;
@@ -1412,7 +1426,7 @@ margin-left: 0.75rem;
     min-width: 8.75rem;
 }
 
-.students-profile .profile-header {
+.all-student .profile-header {
     display: flex;
     justify-self: center;
     justify-content: space-between;
@@ -1421,28 +1435,47 @@ margin-left: 0.75rem;
     width: 80%;
 }
 
-.students-profile .student-list {
+.all-student .student-list,
+.student-list td button {
     width: 100%;
     border-collapse: collapse;
+    background: transparent;
+    border: none;
 }
 
-.students-profile .student-list th,
+
+.all-student .student-list th,
 .student-list td {
     padding: 10px;
     border: 1px solid black;
     text-align: center;
 }
 
-.students-profile .view-button {
-    background: transparent;
-    color: white;
-    padding: 5px 10px;
+.all-student .alert-content .close {
+    display: flex;
+    justify-content: end;
+    padding-right: 0.25rem;
     border: none;
-    border-radius: 3px;
-    cursor: pointer;
 }
 
-.students-profile .view-button:hover {
+.all-student .alertNotify {
+    position: relative;
+    width: 8.75rem;
+    border: 1px solid black;
+    bottom: 5.25rem;
+    left: 67%;
+    /* border: none; */
+    background-color:rgb(211, 211, 185);
+}
+
+
+.all-student .alertNotify button {
+    width: 100%;
+    background: transparent;
+    border: none;
+}
+
+.all-student .view-button:hover {
     background-color: #45a049;
 }
 

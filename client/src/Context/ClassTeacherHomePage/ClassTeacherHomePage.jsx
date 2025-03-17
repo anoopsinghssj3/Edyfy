@@ -17,11 +17,9 @@ function ClassTeacherHomePage() {
 
 
             <div className='btn-group'>
-                <button >View Student Profile</button>
+                <button >All Student</button>
                 <button >Add Student Profile</button>
-                <button >View Attendance</button>
-                <button >View Report</button>
-                <button >Add Report</button>
+                <button > TAke / View Attendance</button>
             </div>
 
         </div>

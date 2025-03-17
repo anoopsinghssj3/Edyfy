@@ -10,7 +10,6 @@ import StudentAttendanceSummary from '../../Context/StudentAttendanceSummary/Stu
 import AcademicReports from '../../Context/AcademicReports/AcademicReports'
 import AcademicReportsMarks from '../../Context/AcademicReportsMarks/AcademicReportsMarks'
 import ClassTeacherHomePage from '../../Context/ClassTeacherHomePage/ClassTeacherHomePage'
-import StudentsProfile from '../../Context/StudentsProfile/StudentsProfile'
 import AddStudent from '../../Context/AddStudent/AddStudent'
 import TakeAttendance from '../../Context/TakeAttendance/TakeAttendance'
 import SelectDateForAttendance from '../../Context/SelectDateForAttendance/SelectDateForAttendance'
@@ -27,6 +26,7 @@ import AddClass from '../../Context/AddClass/AddClass'
 import ContactDeveloper from '../../Context/ContactDeveloper/ContactDeveloper'
 import Chats from '../../Context/Chats/Chats'
 import SpecificChat from '../../Context/SpecificChat/SpecificChat'
+import AllStudent from '../../Context/AllStudent/AllStudent'
 
 function HomeContainer() {
     return (
@@ -42,7 +42,7 @@ function HomeContainer() {
             {/* <AcademicReports /> */}
             {/* <AcademicReportsMarks /> */}
             {/* <ClassTeacherHomePage /> */}
-            {/* <StudentsProfile/> */}
+            <AllStudent/>
             {/* <AddStudent /> */}
             {/* <SelectDateForAttendance /> */}
             {/* <TakeAttendance /> */}
@@ -58,7 +58,7 @@ function HomeContainer() {
             {/* <AddClass /> */}
             {/* <ContactDeveloper/> */}
             {/* <Chats/> */}
-            <SpecificChat/>
+            {/* <SpecificChat/> */}
         </div>
     )
 }

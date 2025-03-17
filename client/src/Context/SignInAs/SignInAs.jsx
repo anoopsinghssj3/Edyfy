@@ -32,6 +32,10 @@ function SignInAs() {
                     </svg>
                     <span>Admin</span>
                 </button>
+
+                <div className='or'>OR</div>
+
+                <button className='register-admin'>Register As Admin</button>
             </div>
 
         </div>
