@@ -336,7 +336,6 @@ body {
     width: 100%;
 }
 
-
 /* student profile to view  (page-7)*/
 .student-profile {
     position: relative;
@@ -467,16 +466,6 @@ body {
 .student-profile button:hover {
     background-color: #1d4f87;
 }
-
-.student-profile .back-arrow {
-    text-decoration: none;
-    font-size: 1.5rem;
-    display: block;
-    text-align: left;
-    margin-bottom: 0.625rem;
-    color: black;
-}
-
 
 /* attendance  (page-8)*/
 .attendance {
@@ -636,13 +625,8 @@ body {
     background-color: #0056b3;
 }
 
-.attendance .back-arrow {
+.attendance .container .back-btn {
     position: relative;
-    text-decoration: none;
-    font-size: 24px;
-    display: block;
-    text-align: left;
-    color: black;
     top: 1rem;
 }
 
@@ -734,14 +718,22 @@ body {
 .student-attendance-summary {
     position: relative;
     width: 100vw;
-    height: 100vh;
     height: fit-content;
     display: flex;
     justify-content: center;
     align-items: center;
     background: transparent;
-    overflow-x: hidden;
-    top: 1%;
+    top: 6%;
+}
+
+.student-attendance-summary .container {
+    position: relative;
+    width: 95%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
 }
 
 .student-attendance-summary .title {
@@ -763,15 +755,6 @@ body {
     width: 1.1rem;
 }
 
-
-.student-attendance-summary .container {
-    position: relative;
-    width: 95%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: transparent;
-}
 
 .student-attendance-summary .card {
     background: transparent;
@@ -832,13 +815,10 @@ body {
     top: 1rem;
 }
 
-.student-attendance-summary .back-arrow {
-    text-decoration: none;
-    font-size: 24px;
-    display: block;
-    text-align: left;
-    margin-bottom: 10px;
-    color: black;
+.student-attendance-summary .back-btn {
+    position: absolute;
+    bottom: 97%;
+    left: 2%;
 }
 
 /* academic reports (page-11)*/
@@ -918,22 +898,20 @@ body {
     cursor: pointer;
 }
 
-.academic-reports .test-btn:hover {
-    background: #007BFF;
-    color: white;
-}
 
-.academic-reports .container .back-arrow {
+.academic-reports .back-btn {
     text-decoration: none;
-    font-size: 24px;
     display: block;
     text-align: left;
     margin-bottom: 10px;
     color: black;
-    width: 0.5rem;
     position: relative;
-    right: 2.5rem;
+    left: 4%;
     top: 1.5rem;
+}
+
+.academic-reports .test-btn:hover {
+    color: #000;
 }
 
 /* academic reports marks page-12,13,14 */
@@ -988,7 +966,7 @@ body {
 }
 
 .academic-reports-marks .card .title {
-    margin-bottom: 10px;
+    margin-top: 0.75rem;
     font-size: clamp(2.25rem, 8vw, 3.2rem);
     width: 100%;
 }
@@ -1053,20 +1031,21 @@ body {
     justify-self: end;
 }
 
+.academic-reports-marks .back-btn {
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    margin-bottom: 10px;
+    color: black;
+    position: relative;
+    left: 2%;
+    top: 1.5rem;
+}
+
 .academic-reports-marks button:hover {
     background: darkblue;
 }
 
-.academic-reports-marks .back-arrow {
-    text-decoration: none;
-    position: relative;
-    left: 5px;
-    font-size: 24px;
-    display: block;
-    text-align: left;
-    top: 1.25rem;
-    color: black;
-}
 
 /* chats page-15 */
 .chats {
@@ -1218,11 +1197,6 @@ body {
     font-size: 18px;
 }
 
-.specific-chat .back-arrow {
-    font-size: 20px;
-    cursor: pointer;
-}
-
 
 .specific-chat .chat-icons svg {
     margin-left: 2px;
@@ -1324,6 +1298,11 @@ body {
     border-radius: 50%;
 }
 
+.specific-chat .back-btn {
+    position: relative;
+    right: 4%;
+}
+
 
 /* class teacher home page (page-21) */
 .class-teacher-home-page {
@@ -1397,6 +1376,12 @@ body {
     justify-content: center;
 }
 
+.class-teacher-home-page .back-btn {
+    position: relative;
+    left: 5%;
+    top: 10%;
+}
+
 .class-teacher-home-page .btn-group button:hover {
     background-color: #45a049;
 }
@@ -1414,6 +1399,8 @@ body {
     width: 100%;
     padding: 20px;
     border-radius: 5px;
+    height: 100vh;
+    position: relative;
 }
 
 .all-student .title {
@@ -1465,7 +1452,7 @@ body {
     bottom: 5.25rem;
     left: 67%;
     /* border: none; */
-    background-color:rgb(211, 211, 185);
+    background-color: rgb(211, 211, 185);
 }
 
 
@@ -1473,6 +1460,12 @@ body {
     width: 100%;
     background: transparent;
     border: none;
+}
+
+.all-student .back-btn {
+    position: relative;
+    left: 5%;
+    top: 10%;
 }
 
 .all-student .view-button:hover {
@@ -1496,11 +1489,6 @@ body {
     min-width: 8.75rem;
     bottom: 1.4375rem;
     text-align: center;
-}
-
-.add-student .sub-container .back-btn {
-    position: relative;
-    bottom: 5rem;
 }
 
 .add-student .container {
@@ -1606,6 +1594,12 @@ body {
 
 }
 
+.add-student .container .back-btn {
+    position: relative;
+    right: 10%;
+
+}
+
 .add-student button:hover {
     background-color: #1d4f87;
 }
@@ -1622,6 +1616,8 @@ body {
 }
 
 .select-date-for-attendance .container {
+    position: relative;
+    top: 3%;
     text-align: center;
     width: 100%;
     max-height: 89%;
@@ -1753,25 +1749,14 @@ body {
     padding: 5px;
 }
 
-.select-date-for-attendance button.btn {
-    padding: 10px 15px;
-    font-size: 16px;
-    cursor: pointer;
-    border: 1px solid black;
-    border-radius: 1.5rem;
-    width: 25%;
+.select-date-for-attendance .back-btn {
+    position: relative;
+    left: 5%;
+    bottom: 41%;
 }
 
 .select-date-for-attendance button.btn:hover {
     background-color: #0056b3;
-}
-
-.select-date-for-attendance .back-arrow {
-    text-decoration: none;
-    font-size: 24px;
-    display: block;
-    text-align: left;
-    color: black;
 }
 
 /* take attendance page-25,26 */
@@ -1845,6 +1830,12 @@ body {
     position: relative;
 }
 
+.take-attendance .back-btn{
+    position: relative;
+    left: 5%;
+    bottom: 42%;
+}
+
 .take-attendance .toggle-btn::before {
     content: "";
     width: 18px;
@@ -1893,14 +1884,6 @@ body {
     border-radius: 10px;
 }
 
-.select-student-add-report .back-arrow {
-    text-decoration: none;
-    font-size: 24px;
-    position: relative;
-    display: flex;
-    align-self: flex-start;
-    color: black;
-}
 
 .select-student-add-report .title {
     position: relative;
@@ -1949,6 +1932,10 @@ body {
     font-weight: bold;
 }
 
+.select-student-add-report .back-btn {
+    position: relative;
+    right: 60%;
+}
 
 /* add report page-28 */
 .add-report {
@@ -1967,14 +1954,6 @@ body {
     max-width: 600px;
     margin-bottom: 1rem;
     height: 90%;
-}
-
-.add-report .back-arrow {
-    text-decoration: none;
-    font-size: 24px;
-    display: block;
-    text-align: left;
-    color: black;
 }
 
 .add-report .title {
@@ -2018,6 +1997,12 @@ body {
     font-size: 16px;
 }
 
+.add-report .back-btn {
+    position: relative;
+    left: 5%;
+    bottom: 45%;
+}
+
 .add-report .report-btn:hover {
     background: #f0f0f0;
 }
@@ -2053,9 +2038,14 @@ body {
 .add-report-of-exam .container .card .sub-card .section {
     display: flex;
     left: 1rem;
-    margin-top: 1rem;
+    margin-top: 0.5rem;
     flex-direction: row;
     justify-self: center;
+}
+
+.add-report-of-exam .card .student-name {
+    position: relative;
+    top: 0.5rem;
 }
 
 .add-report-of-exam .card .student-name label {
@@ -2099,15 +2089,16 @@ body {
 }
 
 .add-report-of-exam .card .title {
-    margin-bottom: 10px;
+    position: relative;
+    top: 0.01rem;
     font-size: clamp(2.25rem, 8vw, 3.2rem);
     width: 100%;
+
 }
 
 .add-report-of-exam .card .sub-title {
     font-size: clamp(2rem, 2.5vw, 2.5rem);
     position: relative;
-    bottom: 1rem;
 }
 
 .add-report-of-exam p {
@@ -2176,20 +2167,16 @@ body {
     padding: 4px 12px;
 }
 
+.add-report-of-exam .back-btn {
+    position: relative;
+    left: 4%;
+    bottom: 45%;
+}
+
 .add-report-of-exam button:hover {
     background: darkblue;
 }
 
-.add-report-of-exam .back-arrow {
-    text-decoration: none;
-    position: relative;
-    left: 0.5rem;
-    font-size: 24px;
-    display: block;
-    text-align: left;
-    top: 1.25rem;
-    color: black;
-}
 
 /* admin home page(page-32)  */
 .admin-home-page {
@@ -2251,17 +2238,8 @@ body {
     text-align: center;
     width: 350px;
     position: relative;
+    top: 2%;
     height: 100vh;
-}
-
-.select-class-for-attendance .container .back-btn {
-    position: relative;
-    right: 11rem;
-    top: 2.5rem;
-    background: none;
-    border: none;
-    font-size: 20px;
-    cursor: pointer;
 }
 
 .select-class-for-attendance .title {
@@ -2314,6 +2292,13 @@ body {
     cursor: pointer;
 }
 
+.select-class-for-attendance .back-btn {
+    position: relative;
+    left: 5%;
+    bottom: 43%;
+}
+
+
 .select-class-for-attendance .view-btn:hover {
     background: #333;
 }
@@ -2336,16 +2321,6 @@ body {
     flex-direction: column;
     align-items: center;
     overflow: auto;
-}
-
-.manage-class-teacher .container .back-button {
-    position: absolute;
-    left: 12%;
-    top: 20px;
-    background: none;
-    border: none;
-    font-size: 24px;
-    cursor: pointer;
 }
 
 .manage-class-teacher .title {
@@ -2382,6 +2357,12 @@ body {
     border: none;
 }
 
+.manage-class-teacher .back-btn {
+    position: relative;
+    left: 5%;
+    bottom: 41%;
+}
+
 /* all teacher page-37 */
 .all-teacher {
     display: flex;
@@ -2403,11 +2384,6 @@ body {
 .all-teacher .container .title {
     text-align: center;
     font-size: clamp(2.25rem, 8vw, 3.2rem);
-}
-
-.all-teacher .container .back-btn {
-    position: relative;
-    bottom: 5rem;
 }
 
 .all-teacher .sub-title {
@@ -2441,6 +2417,11 @@ body {
     font-size: 14px;
 }
 
+.all-teacher .back-btn {
+    position: relative;
+    bottom: 42%;
+    left: 5%;
+}
 
 /* mark holiday page-38 */
 .mark-holiday {
@@ -2572,15 +2553,9 @@ body {
     background-color: #555;
 }
 
-.mark-holiday .back-btn {
+.mark-holiday .container .back-btn {
     position: relative;
-    bottom: 3.5rem;
-    right: 1rem;
-    text-decoration: none;
-    font-size: 24px;
-    display: block;
-    text-align: left;
-    color: black;
+    right: 55%;
 }
 
 /* add teacher page-39 */
@@ -2672,6 +2647,7 @@ body {
     width: 350px;
     position: relative;
     height: 100vh;
+    margin-top: 1rem;
 }
 
 .add-class .container .back-btn {
@@ -2733,6 +2709,12 @@ body {
     cursor: pointer;
 }
 
+.add-class .back-btn {
+    position: relative;
+    left: 5%;
+    bottom: 45%;
+}
+
 .add-class .view-btn:hover {
     background: #333;
 }
@@ -2785,11 +2767,8 @@ body {
     text-align: center;
 }
 
-.contact-developer .back-button {
+.contact-developer .back-btn {
     position: absolute;
-    top: 10%;
-    left: 10px;
-    font-size: 20px;
-    text-decoration: none;
-    color: black;
+    top: 4%;
+    left: 5%;
 }

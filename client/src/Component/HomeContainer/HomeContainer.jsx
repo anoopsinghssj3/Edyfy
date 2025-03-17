@@ -37,12 +37,12 @@ function HomeContainer() {
             {/* <StudentHomePage /> */}
             {/* <StudentProfile /> */}
             {/* <Attendance /> */}
-            {/* <VariousColorRoles /> */}
+            <VariousColorRoles />
             {/* <StudentAttendanceSummary /> */}
             {/* <AcademicReports /> */}
             {/* <AcademicReportsMarks /> */}
             {/* <ClassTeacherHomePage /> */}
-            <AllStudent/>
+            {/* <AllStudent/> */}
             {/* <AddStudent /> */}
             {/* <SelectDateForAttendance /> */}
             {/* <TakeAttendance /> */}

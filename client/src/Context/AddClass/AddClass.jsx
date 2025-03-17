@@ -4,8 +4,12 @@ function AddClass() {
     return (
         // add class page-40
         <div className="add-class">
+            <svg className='back-btn' width="24" height="39" viewBox="0 0 24 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8.64001 27.7371L2.88 19.0197L8.64001 10.3024" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M4.79999 19.0197H20.16" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+
             <div class="container">
-                <button class="back-btn">&#8592;</button>
                 <div className='title'>Add Class</div>
                 <div class="dropdowns">
                     <div class="dropdown">
@@ -25,7 +29,7 @@ function AddClass() {
                         </select>
                     </div>
                 </div>
-                <button class="view-btn">View</button>
+                <button class="view-btn">Submit</button>
             </div>
         </div>
     )

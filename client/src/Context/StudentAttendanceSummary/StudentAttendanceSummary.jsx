@@ -1,13 +1,12 @@
 import React from 'react'
-import  '../../App.css'
+import '../../App.css'
 
 function StudentAttendanceSummary() {
     return (
         // view type page-9,10
         <div className="student-attendance-summary">
-            <div class="container">
+            <div class="container"> 
                 <div class="card">
-                    <a href="#" class="back-arrow">&larr;</a>
                     <div className='title'>Attendance Summary</div>
                     <div class="year-selector">
                         <span class="arrow">&lt;</span>

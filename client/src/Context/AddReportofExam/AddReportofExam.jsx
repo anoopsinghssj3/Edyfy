@@ -6,11 +6,14 @@ function AddReportofExam() {
         // Add Report of Exam (page-29,30,31)
 
         <div className="add-report-of-exam">
+            <svg className='back-btn' width="24" height="39" viewBox="0 0 24 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8.64001 27.7371L2.88 19.0197L8.64001 10.3024" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M4.79999 19.0197H20.16" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
 
             <div class="container">
                 <div class="card">
                     <div className="sub-card">
-                        <a href="#" class="back-arrow">&larr;</a>
                         <div className='title'> Add Reports</div>
                         <input type="text" className='sub-title' placeholder='Periodic Test - 1' />
                         <div className='student-name'>
@@ -23,7 +26,7 @@ function AddReportofExam() {
                                 <input type="number" placeholder='10' />
                             </div>
                             <div className='section'>
-                                <label htmlFor="">Class:</label>
+                                <label htmlFor="">Section:</label>
                                 <input type="text" placeholder='F' />
                             </div>
                         </div>

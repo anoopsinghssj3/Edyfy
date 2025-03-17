@@ -6,7 +6,6 @@ function StudentProfile() {
 
         <div className="student-profile">
             <div class="container">
-                <a href="#" class="back-arrow">&larr;</a>
                 <div className="sub-container">
                     <div className='title'>Profile</div>
                     <div class="profile-pic">
