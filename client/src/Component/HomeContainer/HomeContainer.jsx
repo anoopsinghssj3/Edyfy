@@ -33,11 +33,11 @@ function HomeContainer() {
         <div className="home-container">
             {/* <SignInAs /> */}
             {/* <SignIn /> */}
-            {/* <RegisterAsAdmin /> */}
+            <RegisterAsAdmin />
             {/* <StudentHomePage /> */}
             {/* <StudentProfile /> */}
             {/* <Attendance /> */}
-            <VariousColorRoles />
+            {/* <VariousColorRoles /> */}
             {/* <StudentAttendanceSummary /> */}
             {/* <AcademicReports /> */}
             {/* <AcademicReportsMarks /> */}
