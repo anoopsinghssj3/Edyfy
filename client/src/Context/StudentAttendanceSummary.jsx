@@ -1,36 +1,36 @@
 import React from 'react'
-import '../../App.css'
+import '../App.css'
 
 function StudentAttendanceSummary() {
     return (
         // view type page-9,10
         <div className="student-attendance-summary">
-            <div class="container"> 
-                <div class="card">
+            <div className="container"> 
+                <div className="card">
                     <div className='title'>Attendance Summary</div>
-                    <div class="year-selector">
-                        <span class="arrow">&lt;</span>
-                        <span class="year">2025</span>
-                        <span class="arrow">&gt;</span>
+                    <div className="year-selector">
+                        <span className="arrow">&lt;</span>
+                        <span className="year">2025</span>
+                        <span className="arrow">&gt;</span>
                         <button className="more-info-btn">
                             <img src="./src/Component/Images/more_info.svg" alt="" />
                         </button>
                     </div>
-                    <div class="attendance-list">
-                        <div class="month"><span>Jan</span> <span>17 / 24</span></div>
-                        <div class="month"><span>Feb</span> <span>17 / 24</span></div>
-                        <div class="month"><span>March</span> <span>17 / 24</span></div>
-                        <div class="month"><span>April</span> <span>17 / 24</span></div>
-                        <div class="month"><span>May</span> <span>17 / 24</span></div>
-                        <div class="month"><span>June</span> <span>17 / 24</span></div>
-                        <div class="month"><span>July</span> <span>17 / 24</span></div>
-                        <div class="month"><span>Aug</span> <span>17 / 24</span></div>
-                        <div class="month"><span>Sept</span> <span>17 / 24</span></div>
-                        <div class="month"><span>Oct</span> <span>17 / 24</span></div>
-                        <div class="month"><span>Nov</span> <span>17 / 24</span></div>
-                        <div class="month"><span>Dec</span> <span>17 / 24</span></div>
+                    <div className="attendance-list">
+                        <div className="month"><span>Jan</span> <span>17 / 24</span></div>
+                        <div className="month"><span>Feb</span> <span>17 / 24</span></div>
+                        <div className="month"><span>March</span> <span>17 / 24</span></div>
+                        <div className="month"><span>April</span> <span>17 / 24</span></div>
+                        <div className="month"><span>May</span> <span>17 / 24</span></div>
+                        <div className="month"><span>June</span> <span>17 / 24</span></div>
+                        <div className="month"><span>July</span> <span>17 / 24</span></div>
+                        <div className="month"><span>Aug</span> <span>17 / 24</span></div>
+                        <div className="month"><span>Sept</span> <span>17 / 24</span></div>
+                        <div className="month"><span>Oct</span> <span>17 / 24</span></div>
+                        <div className="month"><span>Nov</span> <span>17 / 24</span></div>
+                        <div className="month"><span>Dec</span> <span>17 / 24</span></div>
                     </div>
-                    <button class="view-button">View Attendance</button>
+                    <button className="view-button">View Attendance</button>
                 </div>
             </div>
 

@@ -21,6 +21,11 @@ import SelectDateForAttendance from './Context/SelectDateForAttendance'
 import SelectStudentAddReport from './Context/SelectStudentAddReport'
 import SignIn from './Context/SignIn'
 import SignInAs from './Context/SignInAs'
+import SpecificChat from './Context/SpecificChat'
+import StudentAttendanceSummary from './Context/StudentAttendanceSummary'
+import StudentHomePage from './Context/StudentHomePage'
+import StudentProfile from './Context/StudentProfile'
+import TakeAttendance from './Context/TakeAttendance'
 
 function App() {
   return (
@@ -35,7 +40,7 @@ function App() {
     {/* <AdminHomePage/> */}
     {/* <AllStudent/> */}
     {/* <Allteacher/> */}
-    {/* <Attendance/> */}
+    <Attendance/>
     {/* <Chats/> */}
     {/* <ClassTeacherHomePage/> */}
     {/* <ContactDeveloper/> */}
@@ -46,7 +51,12 @@ function App() {
     {/* <SelectDateForAttendance/> */}
     {/* <SelectStudentAddReport/> */}
     {/* <SignIn/> */}
-    <SignInAs/>
+    {/* <SignInAs/> */}
+    {/* <SpecificChat/> */}
+    {/* <StudentAttendanceSummary/> */}
+    {/* <StudentHomePage/> */}
+    {/* <StudentProfile/> */}
+    {/* <TakeAttendance/> */}
     
     </>
   )

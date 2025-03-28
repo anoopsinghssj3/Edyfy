@@ -1,11 +1,11 @@
 import React from 'react'
-import  '../../App.css'
+import  '../App.css'
 
 function StudentHomePage() {
     return (
         // student homepage btn type page-6
         <div className='student-home-page'>
-            <div className="title" max>
+            <div className="title" max={25}>
                 Welcome, Jayveer Chaugale
             </div>
 
@@ -28,7 +28,6 @@ function StudentHomePage() {
                 </button>
 
             </div>
-
 
         </div>
     )

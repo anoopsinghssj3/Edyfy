@@ -1,22 +1,22 @@
-import React from 'react'
-import "../../App.css"
+import React from "react"
+import "../App.css"
 
 function SpecificChat() {
     return (
         // specific-chat page-16,17
         <div className="specific-chat">
 
-            <div class="chat-container">
-                <svg className='back-btn' width="24" height="39" viewBox="0 0 24 39" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M8.64001 27.7371L2.88 19.0197L8.64001 10.3024" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                    <path d="M4.79999 19.0197H20.16" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            <div className="chat-container">
+                <svg className="back-btn" width="24" height="39" viewBox="0 0 24 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.64001 27.7371L2.88 19.0197L8.64001 10.3024" stroke="black" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                    <path d="M4.79999 19.0197H20.16" stroke="black" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
 
-                <div class="chat-header">
-                    <div className='sub-title'>Abhinav Singh</div>
-                    <div class="chat-icons">
+                <div className="chat-header">
+                    <div className="sub-title">Abhinav Singh</div>
+                    <div className="chat-icons">
                         <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <g clip-path="url(#clip0_80_1303)">
+                            <g clipPath="url(#clip0_80_1303)">
                                 <path d="M16 32C15.45 32 14.975 31.8083 14.575 31.425C14.1917 31.025 14 30.55 14 30V18C14 17.45 14.1917 16.9833 14.575 16.6C14.975 16.2 15.45 16 16 16H28C28.55 16 29.0167 16.2 29.4 16.6C29.8 16.9833 30 17.45 30 18V22.5L34 18.5V29.5L30 25.5V30C30 30.55 29.8 31.025 29.4 31.425C29.0167 31.8083 28.55 32 28 32H16ZM16 30H28V18H16V30ZM16 30V18V30Z" fill="#1F2619" />
                             </g>
                             <defs>
@@ -29,7 +29,7 @@ function SpecificChat() {
                             <path d="M19.95 21C17.8667 21 15.8083 20.5458 13.775 19.6375C11.7417 18.7292 9.89167 17.4417 8.225 15.775C6.55833 14.1083 5.27083 12.2583 4.3625 10.225C3.45417 8.19167 3 6.13333 3 4.05C3 3.75 3.1 3.5 3.3 3.3C3.5 3.1 3.75 3 4.05 3H8.1C8.33333 3 8.54167 3.07917 8.725 3.2375C8.90833 3.39583 9.01667 3.58333 9.05 3.8L9.7 7.3C9.73333 7.56667 9.725 7.79167 9.675 7.975C9.625 8.15833 9.53333 8.31667 9.4 8.45L6.975 10.9C7.30833 11.5167 7.70417 12.1125 8.1625 12.6875C8.62083 13.2625 9.125 13.8167 9.675 14.35C10.1917 14.8667 10.7333 15.3458 11.3 15.7875C11.8667 16.2292 12.4667 16.6333 13.1 17L15.45 14.65C15.6 14.5 15.7958 14.3875 16.0375 14.3125C16.2792 14.2375 16.5167 14.2167 16.75 14.25L20.2 14.95C20.4333 15.0167 20.625 15.1375 20.775 15.3125C20.925 15.4875 21 15.6833 21 15.9V19.95C21 20.25 20.9 20.5 20.7 20.7C20.5 20.9 20.25 21 19.95 21ZM6.025 9L7.675 7.35L7.25 5H5.025C5.10833 5.68333 5.225 6.35833 5.375 7.025C5.525 7.69167 5.74167 8.35 6.025 9ZM14.975 17.95C15.625 18.2333 16.2875 18.4583 16.9625 18.625C17.6375 18.7917 18.3167 18.9 19 18.95V16.75L16.65 16.275L14.975 17.95Z" fill="#1F2619" />
                         </svg>
                         <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <g clip-path="url(#clip0_80_1371)">
+                            <g clipPath="url(#clip0_80_1371)">
                                 <path d="M24 32C23.45 32 22.9792 31.8042 22.5875 31.4125C22.1958 31.0208 22 30.55 22 30C22 29.45 22.1958 28.9792 22.5875 28.5875C22.9792 28.1958 23.45 28 24 28C24.55 28 25.0208 28.1958 25.4125 28.5875C25.8042 28.9792 26 29.45 26 30C26 30.55 25.8042 31.0208 25.4125 31.4125C25.0208 31.8042 24.55 32 24 32ZM24 26C23.45 26 22.9792 25.8042 22.5875 25.4125C22.1958 25.0208 22 24.55 22 24C22 23.45 22.1958 22.9792 22.5875 22.5875C22.9792 22.1958 23.45 22 24 22C24.55 22 25.0208 22.1958 25.4125 22.5875C25.8042 22.9792 26 23.45 26 24C26 24.55 25.8042 25.0208 25.4125 25.4125C25.0208 25.8042 24.55 26 24 26ZM24 20C23.45 20 22.9792 19.8042 22.5875 19.4125C22.1958 19.0208 22 18.55 22 18C22 17.45 22.1958 16.9792 22.5875 16.5875C22.9792 16.1958 23.45 16 24 16C24.55 16 25.0208 16.1958 25.4125 16.5875C25.8042 16.9792 26 17.45 26 18C26 18.55 25.8042 19.0208 25.4125 19.4125C25.0208 19.8042 24.55 20 24 20Z" fill="#1F2619" />
                             </g>
                             <defs>
@@ -42,36 +42,36 @@ function SpecificChat() {
                     </div>
                 </div>
 
-                <div class="chat-messages">
-                    <div class="message received">
-                        <div class="avatar"></div>
-                        <div class="text">So excited!</div>
+                <div className="chat-messages">
+                    <div className="message received">
+                        <div className="avatar"></div>
+                        <div className="text">So excited!</div>
                     </div>
-                    <p class="chat-time">Yesterday</p>
-                    <div class="message received">
-                        <div class="avatar"></div>
-                        <div class="text">What should we make?</div>
+                    <p className="chat-time">Yesterday</p>
+                    <div className="message received">
+                        <div className="avatar"></div>
+                        <div className="text">What should we make?</div>
                     </div>
-                    <div class="message received">
-                        <div class="avatar"></div>
-                        <div class="text">Pasta?</div>
+                    <div className="message received">
+                        <div className="avatar"></div>
+                        <div className="text">Pasta?</div>
                     </div>
 
-                    <div class="image-message">
-                        <div class="image-preview">
+                    <div className="image-message">
+                        <div className="image-preview">
                             <p>Homemade Dumplings</p>
                             <p>everydumplingever.com</p>
                         </div>
-                        <div class="text sent">or we could make this?</div>
+                        <div className="text sent">or we could make this?</div>
                     </div>
 
-                    <div class="message received">
-                        <div class="avatar"></div>
-                        <div class="text">Sounds good!</div>
+                    <div className="message received">
+                        <div className="avatar"></div>
+                        <div className="text">Sounds good!</div>
                     </div>
                 </div>
 
-                <div class="chat-footer">
+                <div className="chat-footer">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M11 17H13V13H17V11H13V7H11V11H7V13H11V17ZM12 22C10.6167 22 9.31667 21.7417 8.1 21.225C6.88333 20.6917 5.825 19.975 4.925 19.075C4.025 18.175 3.30833 17.1167 2.775 15.9C2.25833 14.6833 2 13.3833 2 12C2 10.6167 2.25833 9.31667 2.775 8.1C3.30833 6.88333 4.025 5.825 4.925 4.925C5.825 4.025 6.88333 3.31667 8.1 2.8C9.31667 2.26667 10.6167 2 12 2C13.3833 2 14.6833 2.26667 15.9 2.8C17.1167 3.31667 18.175 4.025 19.075 4.925C19.975 5.825 20.6833 6.88333 21.2 8.1C21.7333 9.31667 22 10.6167 22 12C22 13.3833 21.7333 14.6833 21.2 15.9C20.6833 17.1167 19.975 18.175 19.075 19.075C18.175 19.975 17.1167 20.6917 15.9 21.225C14.6833 21.7417 13.3833 22 12 22ZM12 20C14.2333 20 16.125 19.225 17.675 17.675C19.225 16.125 20 14.2333 20 12C20 9.76667 19.225 7.875 17.675 6.325C16.125 4.775 14.2333 4 12 4C9.76667 4 7.875 4.775 6.325 6.325C4.775 7.875 4 9.76667 4 12C4 14.2333 4.775 16.125 6.325 17.675C7.875 19.225 9.76667 20 12 20Z" fill="black" />
                     </svg>
