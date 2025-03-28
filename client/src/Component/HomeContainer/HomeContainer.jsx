@@ -33,9 +33,9 @@ function HomeContainer() {
         <div className="home-container">
             {/* <SignInAs /> */}
             {/* <SignIn /> */}
-            <RegisterAsAdmin />
+            {/* <RegisterAsAdmin /> */}
             {/* <StudentHomePage /> */}
-            {/* <StudentProfile /> */}
+            <StudentProfile />
             {/* <Attendance /> */}
             {/* <VariousColorRoles /> */}
             {/* <StudentAttendanceSummary /> */}
