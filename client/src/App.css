@@ -17,32 +17,23 @@
 
 }
 
-* {
-    font-family: "Roboto";
-}
-
-body {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    /* min-height: 100vh; */
-    box-sizing: border-box;
-    background-color: var(--material-theme-sys-light-high-contrast-surface, #F7FBEE);
-}
 
 /* page-0 */
-.home-container {
+body {
+    font-family: "Roboto";
     display: flex;
     position: absolute;
     width: 100vw;
     height: 100vh;
     overflow-x: hidden;
+    box-sizing: border-box;
+    background-color: var(--material-theme-sys-light-high-contrast-surface, #F7FBEE);
 }
 
 /* sign-in-as (page-1) */
 .sign-in-as {
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     display: flex;
     justify-content: center;
 }
@@ -92,7 +83,8 @@ body {
 }
 
 .sign-in-as .register-admin {
-    height: 13%;
+    height: 54px;
+    /* not working max height */
     background: var(--material-theme-sys-light-high-contrast-primary, #0D2800);
     color: var(--material-theme-sys-light-high-contrast-on-primary, #FFF);
 }
@@ -101,8 +93,8 @@ body {
 /* sign-in (page-2) */
 .sign-in {
     display: flex;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     justify-content: center;
 }
 
@@ -188,8 +180,8 @@ body {
 /* register as admin (page-5) */
 .register-as-admin {
     display: flex;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     justify-content: center;
 }
 
@@ -204,6 +196,7 @@ body {
 
 .register-as-admin .container {
     position: fixed;
+    width: 100vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1830,7 +1823,7 @@ body {
     position: relative;
 }
 
-.take-attendance .back-btn{
+.take-attendance .back-btn {
     position: relative;
     left: 5%;
     bottom: 42%;
