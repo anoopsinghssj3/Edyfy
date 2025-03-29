@@ -40,13 +40,13 @@ function App() {
     {/* <AdminHomePage/> */}
     {/* <AllStudent/> */}
     {/* <Allteacher/> */}
-    <Attendance/>
+    {/* <Attendance/> */}
     {/* <Chats/> */}
     {/* <ClassTeacherHomePage/> */}
     {/* <ContactDeveloper/> */}
     {/* <ManageClassTeacher/> */}
     {/* <MarkHoliday/> */}
-    {/* <RegisterAsAdmin/> */}
+    <RegisterAsAdmin/>
     {/* <SelectClassForAttendance/> */}
     {/* <SelectDateForAttendance/> */}
     {/* <SelectStudentAddReport/> */}

@@ -627,14 +627,15 @@ body {
 /* various color roles (page-9)*/
 .various-color-roles {
     width: 20rem;
-    height:28rem;
+    height: 28rem;
     display: flex;
     flex-direction: row;
-    background-color:rgb(110, 110, 229);   
+    background-color: rgb(110, 110, 229);
     margin-bottom: 3rem;
 }
 
-.various-color-roles .container {
+.various-color-roles .container,
+.name,.username,.password,.security {
     width: 100%;
     height: 100%;
     display: flex;
