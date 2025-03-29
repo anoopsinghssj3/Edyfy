@@ -15,8 +15,8 @@ function AcademicReports() {
             </svg>
             <div className="container">
 
-                <div className="card">
 
+                <div className="card">
                     <div className="title">Academic Reports</div>
                     <p className="name">Name: <strong>Abhinav Pandey</strong></p>
                     <label htmlFor="year">Year</label>

@@ -35,7 +35,7 @@ function App() {
     {/* <AddClass/> */}
     {/* <AddReport/> */}
     {/* <AddReportofExam/> */}
-    {/* <AddStudent/> */}
+    <AddStudent/>
     {/* <AddTeacher/> */}
     {/* <AdminHomePage/> */}
     {/* <AllStudent/> */}
@@ -46,7 +46,7 @@ function App() {
     {/* <ContactDeveloper/> */}
     {/* <ManageClassTeacher/> */}
     {/* <MarkHoliday/> */}
-    <RegisterAsAdmin/>
+    {/* <RegisterAsAdmin/> */}
     {/* <SelectClassForAttendance/> */}
     {/* <SelectDateForAttendance/> */}
     {/* <SelectStudentAddReport/> */}

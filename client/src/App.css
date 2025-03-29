@@ -195,13 +195,25 @@ body {
 }
 
 .register-as-admin .container {
-    position: fixed;
+    position: relative;
     width: 100vw;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 1.25rem;
+}
+
+
+.register-as-admin .container .name,
+.register-as-admin .container .username,
+.register-as-admin .container .password,
+.register-as-admin .container .security {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .register-as-admin .container .name-l,
@@ -263,7 +275,7 @@ body {
 
 .register-as-admin .container .visibility {
     position: relative;
-    top: 19.3rem;
+    top: 0.5rem;
     left: 10rem;
     background: transparent;
 }
@@ -634,8 +646,7 @@ body {
     margin-bottom: 3rem;
 }
 
-.various-color-roles .container,
-.name,.username,.password,.security {
+.various-color-roles .container {
     width: 100%;
     height: 100%;
     display: flex;
@@ -832,6 +843,7 @@ body {
     height: 100vh;
     display: flex;
     justify-content: center;
+    margin-bottom: 1rem;
 }
 
 .academic-reports .container .card .title {
@@ -896,7 +908,6 @@ body {
     cursor: pointer;
 }
 
-
 .academic-reports .back-btn {
     text-decoration: none;
     display: block;
@@ -931,6 +942,7 @@ body {
     text-align: center;
     border: 1px solid black;
     border-radius: 8px;
+    margin-bottom: 2%;
 }
 
 .academic-reports-marks .container .sub-card {
