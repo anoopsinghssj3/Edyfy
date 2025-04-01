@@ -1,6 +1,4 @@
 #history
-*.history
-*./history/src
 
 # Logs
 logs
