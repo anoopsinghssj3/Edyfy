@@ -1,0 +1,2872 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  /* style variable */
+
+  /*color */
+  --material-theme-sys-light-high-contrast-surface: #f7fbee;
+  --material-theme-sys-light-high-contrast-outline: #3d4537;
+  --material-theme-sys-light-high-contrast-on-surface: #000;
+  --material-theme-sys-light-high-contrast-surface-container-highest: #e0e4d7;
+
+  /* font-weight */
+  --lighter-Font-Weight: 400;
+  --normal-Font-Weight: 500;
+  --bold-Font-Weight: 700;
+  --bolder-Font-Weight: 900;
+}
+
+/* page-0 */
+body {
+  font-family: "Roboto";
+  display: flex;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  background-color: var(--material-theme-sys-light-high-contrast-surface,
+      #f7fbee);
+}
+
+/* sign-in-as (page-1) */
+.sign-in-as {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.sign-in-as .title {
+  position: relative;
+  font-size: clamp(2.25rem, 8vw, 3.2rem);
+  text-align: center;
+  width: 35%;
+  max-width: 14.5rem;
+  min-width: 6.75rem;
+  top: 1%;
+}
+
+.sign-in-as .container {
+  position: relative;
+  height: 45%;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+
+.sign-in-as .container .student,
+.sign-in-as .container .teacher,
+.sign-in-as .container .admin,
+.sign-in-as .register-admin {
+  height: 12%;
+  width: 52%;
+  border-radius: 1.5rem;
+}
+
+
+.sign-in-as .container .btns {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 1.5rem;
+  background: transparent;
+}
+
+.sign-in-as .container .btns svg {
+  position: relative;
+  margin-right: 7%;
+}
+
+.sign-in-as .or {
+  color: var(--material-theme-sys-light-high-contrast-on-surface, #000);
+  text-align: center;
+  font-size: var(--Headline-Large-Size, 32px);
+  font-weight: 400;
+  margin-top: 1rem;
+}
+
+.sign-in-as .register-admin {
+  height: 54px;
+  /* not working max height */
+  background: var(--material-theme-sys-light-high-contrast-primary, #0d2800);
+  color: var(--material-theme-sys-light-high-contrast-on-primary, #fff);
+}
+
+
+.sign-in-as .back-btn {
+  position: relative;
+  right: 42%;
+  bottom: 10%;
+  cursor: pointer;
+}
+
+.sign-in-as .home-btn {
+  position: relative;
+  left: 42%;
+  bottom: 14%;
+  cursor: pointer;
+}
+
+
+/* sign-in (page-2) */
+.sign-in {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+}
+
+.sign-in .title {
+  position: relative;
+  font-size: clamp(2.25rem, 8vw, 3.2rem);
+  text-align: center;
+  width: 44%;
+  max-width: 27.5rem;
+  min-width: 8.75rem;
+}
+
+.sign-in .container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 1.25rem;
+  margin-bottom: 2%;
+}
+
+.sign-in .container .username .user-l,
+.sign-in .container .password .pass-l {
+  position: relative;
+  font-weight: var(--lighter-Font-Weight);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 22rem;
+}
+
+.sign-in .container .username .user-l {
+  top: 0;
+}
+
+.sign-in .container .password .pass-l {
+  top: 55px;
+}
+
+.sign-in .container .username .user-i,
+.sign-in .container .password .pass-i {
+  position: relative;
+  font-weight: var(--lighter-Font-Weight);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 22rem;
+}
+
+.sign-in .container .username .user-i {
+  top: 0;
+}
+
+.sign-in .container .password .pass-i {
+  top: 55px;
+}
+
+.sign-in .password .visibility-on {
+  position: relative;
+  top: 1.5rem;
+  left: 19.5rem;
+}
+
+
+.sign-in .password .visibility-off {
+  position: relative;
+  top: 1.5rem;
+  left: 19.5rem;
+
+}
+
+.sign-in .container .sign-in-btn {
+  position: relative;
+  width: 22rem;
+  height: 3rem;
+  border-radius: 0.25rem;
+  top: 70%;
+  background: var(--material-theme-sys-light-high-contrast-primary, #0d2800);
+  color: var(--material-theme-sys-light-high-contrast-on-primary, #fff);
+}
+
+.sign-in .back-btn {
+  position: relative;
+  right: 45%;
+  bottom: 3.25rem;
+  cursor: pointer;
+}
+
+.sign-in .home-btn {
+  position: relative;
+  left: 42%;
+  bottom: 5.5rem;
+  cursor: pointer;
+}
+
+
+.sign-in .invalid-feedback {
+  position: relative !important;
+}
+
+.sign-in .invalid-feedback-username {
+  top: 0;
+}
+
+.sign-in .invalid-feedback-password {
+  top: 3.4rem;
+}
+
+
+/* register as admin (page-5) */
+.register-as-admin {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+}
+
+.register-as-admin .title {
+  position: relative;
+  font-size: clamp(2.25rem, 8vw, 3.2rem);
+  text-align: center;
+  width: 44%;
+  max-width: 27.5rem;
+  min-width: 8.75rem;
+}
+
+.register-as-admin .container {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 1.25rem;
+  margin-bottom: 2%;
+}
+
+.register-as-admin .container .name-l,
+.register-as-admin .container .user-l,
+.register-as-admin .container .pass-l,
+.register-as-admin .container .sec-code-l {
+  position: relative;
+  font-weight: var(--lighter-Font-Weight);
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 22rem;
+}
+
+.register-as-admin .checkbox {
+  position: relative;
+}
+
+
+.register-as-admin .password .visibility-on {
+  position: relative;
+  top: 7rem;
+  left: 19.5rem;
+}
+
+
+.register-as-admin .password .visibility-off {
+  position: relative;
+  top: 7rem;
+  left: 19rem;
+
+}
+
+
+.register-as-admin .container .name-l {
+  top: 4rem;
+}
+
+.register-as-admin .container .user-l {
+  top: 6.5rem;
+}
+
+.register-as-admin .container .pass-l {
+  top: 9rem;
+}
+
+.register-as-admin .container .sec-code-l {
+  top: 10.5rem;
+}
+
+.register-as-admin .container .name-i,
+.register-as-admin .container .user-i,
+.register-as-admin .container .pass-i,
+.register-as-admin .container .sec-code-i {
+  position: relative;
+  font-weight: var(--lighter-Font-Weight);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 22rem;
+  border-radius: 0.25rem;
+}
+
+.register-as-admin .container .name-i {
+  top: 3.75rem;
+}
+
+.register-as-admin .container .user-i {
+  top: 6.25rem;
+}
+
+.register-as-admin .container .pass-i {
+  top: 8.75rem;
+}
+
+.register-as-admin .container .sec-code-i {
+  top: 10.25rem;
+}
+
+.register-as-admin .container .sign-in-btn {
+  position: relative;
+  width: 22rem;
+  height: 3rem;
+  border-radius: 0.25rem;
+  top: 90%;
+  background: var(--material-theme-sys-light-high-contrast-primary, #0d2800);
+  color: var(--material-theme-sys-light-high-contrast-on-primary, #fff);
+  ;
+}
+
+.register-as-admin .invalid-feedback {
+  position: relative !important;
+}
+
+.register-as-admin .invalid-feedback-name {
+  top: 3.5rem;
+}
+
+.register-as-admin .invalid-feedback-username {
+  top: 6rem;
+}
+
+.register-as-admin .invalid-feedback-password {
+  top: 8.5rem;
+}
+
+.register-as-admin .invalid-feedback-security {
+  top: 10rem;
+}
+
+.register-as-admin .home-btn {
+  position: relative;
+  left: 39%;
+  top: 1.8rem;
+  cursor: pointer;
+}
+
+/* student home page (page-6)*/
+.student-home-page {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.student-home-page .title {
+  position: relative;
+  font-size: clamp(2.25rem, 8vw, 3.2rem);
+  width: 45%;
+  text-align: center;
+  max-width: 37.5rem;
+  min-width: 8.75rem;
+}
+
+.student-home-page .container {
+  position: relative;
+  top: clamp(9%, 9vh, 15%);
+  height: 40%;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 5%;
+}
+
+.student-home-page .container .btns {
+  position: relative;
+  min-height: 16%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30%;
+  min-width: 55%;
+  border-radius: 1.5rem;
+  overflow: auto;
+  background: transparent;
+}
+
+.student-home-page .container .btns span {
+  position: relative;
+  text-align: center;
+  border-radius: 1.5rem;
+  background: transparent;
+  width: 100%;
+}
+
+.student-home-page .back-btn {
+  position: relative;
+  right: 44%;
+  top: 1.5rem;
+  cursor: pointer;
+}
+
+.student-home-page .home-btn {
+  position: relative;
+  left: 43%;
+  /* top: 1.8rem; */
+  cursor: pointer;
+}
+
+
+/* student profile to view  (page-7)*/
+.student-profile {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+.student-profile .sub-container .title {
+  position: relative;
+  display: flex;
+  justify-self: center;
+  font-size: clamp(2.25rem, 8vw, 3.2rem);
+  text-align: center;
+  width: 20%;
+  max-width: 37.5rem;
+  min-width: 8.75rem;
+  bottom: 3.4375rem;
+  left: 0.9375rem;
+}
+
+.student-profile .container {
+  position: relative;
+  background: transparent;
+  padding: 20px;
+  width: clamp(380px, 80vw, 600px);
+  border-radius: 0.625rem;
+  top: 7rem;
+}
+
+.student-profile .sub-container div {
+  text-align: center;
+}
+
+.student-profile .profile-pic {
+  display: flex;
+  justify-content: center;
+}
+
+.student-profile .profile-pic img {
+  position: relative;
+  width: 22vw;
+  /* Uses 25% of viewport width for small screens */
+  height: 22vw;
+  /* Ensures the height matches the width (keeping it square) */
+  max-width: 8.125rem;
+  /* Limits the size for larger screens */
+  max-height: 8.125rem;
+  /* Same as max-width, limiting height */
+  bottom: 1.25rem;
+  border-radius: 50%;
+  background: lightgray;
+}
+
+.student-profile form {
+  display: flex;
+  flex-direction: column;
+}
+
+.student-profile label {
+  margin-top: 0.625rem;
+  font-weight: bold;
+  position: relative;
+}
+
+.student-profile .input-type,
+.student-profile .input-type {
+  padding: 0.5rem;
+  border: 0.0625rem solid #ccc;
+  border-radius: 0.3125rem;
+  margin-top: 0.3125rem;
+  width: 100%;
+}
+
+.student-profile .input-type {
+  height: 2.5rem;
+  border: 0.0625rem solid black;
+}
+
+.student-profile .row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.student-profile .row div {
+  width: 48%;
+}
+
+.student-profile .checkbox {
+  display: flex;
+  align-items: center;
+  margin-top: 0.3125rem;
+}
+
+.student-profile .checkbox .input-type {
+  margin-right: 0.3125rem;
+}
+
+.student-profile button {
+  background-color: #2c6db6;
+  color: white;
+  border: none;
+  padding: 0.625rem;
+  margin-top: 0.9375rem;
+  border-radius: 0.3125rem;
+  cursor: pointer;
+}
+
+.student-profile .container .same-as-parent-i,
+.student-profile .container .same-as-parent-l {
+  position: relative;
+  bottom: 4.9375rem;
+}
+
+.student-profile .container .same-as-parent-i {
+  left: 3.4375rem;
+}
+
+.student-profile .container .same-as-parent-l {
+  right: 3.125rem;
+  width: 6.25rem;
+  font-size: 0.625rem;
+}
+
+
+.student-profile .back-btn {
+  position: relative;
+  left: 5%;
+  bottom: 45%;
+  cursor: pointer;
+}
+
+.student-profile .home-btn {
+  position: relative;
+  left: 85%;
+  bottom: 45%;
+  cursor: pointer;
+}
+
+.student-profile button:hover {
+  background-color: #1d4f87;
+}
+
+/* attendance  (page-8)*/
+.attendance {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  bottom: 2%;
+}
+
+.attendance .container {
+  text-align: center;
+  width: 100%;
+  max-height: 89%;
+  max-width: 400px;
+  background: transparent;
+}
+
+.attendance .upper-side {
+  position: relative;
+  padding: 20px;
+  height: 12vh;
+  bottom: 30px;
+  border-top-left-radius: 1.5rem;
+  border-top-right-radius: 1.5rem;
+  border: 1px solid black;
+  border-bottom: none;
+}
+
+.attendance .sub-container {
+  padding: 0.5rem;
+  position: relative;
+  bottom: 1.9rem;
+  height: 55.5vh;
+  border: 1px solid black;
+  border-bottom-right-radius: 1.5rem;
+  border-bottom-left-radius: 1.5rem;
+}
+
+.attendance .title {
+  position: relative;
+  bottom: 2.25rem;
+  font-size: clamp(2.25rem, 8vw, 3.2rem);
+  font-weight: 500;
+}
+
+.attendance .more-info-btn {
+  position: relative;
+  border: none;
+  cursor: pointer;
+  left: 8.7rem;
+  bottom: 2rem;
+  font-size: 0.75rem;
+  background: transparent;
+}
+
+.attendance .month-year {
+  position: relative;
+  font-size: 24px;
+  right: 80px;
+  font-weight: bold;
+  margin: 10px 0;
+  bottom: 1rem;
+}
+
+.attendance .date-calender {
+  position: relative;
+  left: 60px;
+  top: 1.5rem;
+  left: 5rem;
+  background: transparent;
+  border-radius: 1.5rem;
+  padding: 0 0.25rem;
+}
+
+.attendance .days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  font-weight: bold;
+  margin-bottom: 2px;
+  position: relative;
+  bottom: 0.45rem;
+}
+
+.attendance .days div {
+  margin: 0.25rem;
+  border-radius: 50%;
+}
+
+.attendance .day,
+.attendance .dates span {
+  text-align: center;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 50%;
+}
+
+.attendance .dates span {
+  position: relative;
+  bottom: 0.7rem;
+}
+
+.attendance .select-date {
+  position: relative;
+  bottom: 1rem;
+  right: 4rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.attendance .dates {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 4px;
+  height: 40vh;
+}
+
+.attendance .holiday {
+  color: red;
+  border: 2px solid red;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.attendance .absent {
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.attendance .yellow {
+  background-color: gold;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+
+.attendance button.btn:hover {
+  background-color: #0056b3;
+}
+
+.attendance .container .view-btn {
+  margin-bottom: 5%;
+}
+
+.attendance .container .back-btn {
+  position: relative;
+  top: 1rem;
+  right: 50%;
+}
+
+.attendance .container .home-btn {
+  position: relative;
+  bottom: 1rem;
+  left: 50%;
+}
+
+/* various color roles (page-9)*/
+.various-color-roles {
+  position: relative;
+  width: 16rem;
+  height: fit-content;
+  margin-top: 18%;
+  margin-left: 15%;
+  margin-bottom: 10%;
+  border-radius: 1rem;
+  background-color: rgb(211, 211, 185);
+
+}
+
+.various-color-roles .container {
+  position: relative;
+  left: 7rem;
+  bottom: 3rem;
+  cursor: pointer;
+  margin-bottom: 3rem;
+}
+
+
+.various-color-roles .container .close-svg {
+  position: relative;
+  left: 83%;
+  bottom: 1.65rem;
+}
+
+.various-color-roles .card {
+  background: transparent;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  text-align: left;
+  border: none;
+}
+
+.various-color-roles .title {
+  margin-bottom: 15px;
+  position: relative;
+  right: 2.5rem;
+  text-align: center;
+  font-size: clamp(1.5rem, 2vw, 3.2rem);
+  font-weight: 500;
+  width: 299.5px;
+}
+
+
+.various-color-roles .mark-role {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  position: relative;
+  bottom: 5rem;
+  right: 9rem;
+}
+
+.various-color-roles .container .card {
+  position: relative;
+  right: 55%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+}
+
+.various-color-roles .container .card .role {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 0.5rem;
+}
+
+.various-color-roles .circle {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.various-color-roles .black {
+  background-color: black;
+  color: white;
+}
+
+.various-color-roles .yellow {
+  background-color: gold;
+  color: black;
+}
+
+.various-color-roles .red-outline {
+  border: 2px solid red;
+  color: black;
+}
+
+.various-color-roles .red {
+  background-color: red;
+  color: white;
+}
+
+.various-color-roles .outline {
+  border: 2px solid black;
+  color: black;
+}
+
+/* student attendance summary (page-10,11)*/
+.student-attendance-summary {
+  position: relative;
+  width: 100vw;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  top: 6%;
+
+}
+
+.student-attendance-summary .container {
+  position: relative;
+  width: 95%;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+}
+
+.student-attendance-summary .title {
+  position: relative;
+  bottom: 2.85rem;
+  font-size: clamp(2.25rem, 8vw, 3.2rem);
+}
+
+.student-attendance-summary .more-info-btn {
+  position: relative;
+  border: none;
+  left: 20%;
+  background: transparent;
+  bottom: 0.2rem;
+}
+
+.student-attendance-summary .more-info-btn img {
+  height: 1.1rem;
+  width: 1.1rem;
+}
+
+.student-attendance-summary .card {
+  background: transparent;
+  padding: 1rem;
+  border-radius: 10px;
+  text-align: center;
+  width: clamp(250px, 80vw, 500px);
+  height: 46rem;
+  border: none;
+}
+
+.student-attendance-summary .year-selector {
+  position: relative;
+  bottom: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.student-attendance-summary .arrow {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 0 10px;
+  cursor: pointer;
+}
+
+.student-attendance-summary .year {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.student-attendance-summary .attendance-list {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.student-attendance-summary .month {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+
+.student-attendance-summary .view-button {
+  position: relative;
+  display: flex;
+  align-self: center;
+  padding: 10px;
+  width: 80%;
+  justify-content: center;
+  background: transparent;
+  border: 1px solid black;
+  border-radius: 1.5rem;
+  top: 1rem;
+  margin-bottom: 10%;
+}
+
+
+.student-attendance-summary .back-btn {
+  position: relative;
+  left: 4%;
+  bottom: 23.5rem;
+  cursor: pointer;
+}
+
+.student-attendance-summary .home-btn {
+  position: relative;
+  left: 88%;
+  bottom: 23.5rem;
+  cursor: pointer;
+}
+
+/* academic reports (page-11)*/
+.academic-reports {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.academic-reports .container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.academic-reports .container .card .title {
+  position: relative;
+  /* text-align: left; */
+  right: 3.5rem;
+  width: 27rem;
+  font-size: clamp(2.25rem, 8vw, 3.2rem);
+}
+
+.academic-reports .card {
+  background: transparent;
+  padding: 20px;
+  border-radius: 10px;
+  width: 350px;
+  text-align: center;
+  border: none;
+}
+
+.academic-reports .name {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.academic-reports label {
+  font-size: 22px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5px;
+}
+
+.academic-reports select {
+  position: relative;
+  left: 5rem;
+  width: 50%;
+  padding: 8px;
+  font-size: 16px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  background: transparent;
+}
+
+.academic-reports .test-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.academic-reports .test-btn {
+  position: relative;
+  top: 1rem;
+  width: 65%;
+  padding: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  border: 1px solid black;
+  border-radius: 1.5rem;
+  background: transparent;
+  cursor: pointer;
+}
+
+
+.academic-reports .back-btn {
+  position: relative;
+  left: 4%;
+  top: 1.5rem;
+  cursor: pointer;
+}
+
+
+.academic-reports .home-btn {
+  position: relative;
+  left: 89%;
+  top: 1.8rem;
+  cursor: pointer;
+}
+
+.academic-reports form .save-btn {
+  position: relative;
+  top: 1.5rem;
+  background: var(--material-theme-sys-light-high-contrast-primary, #0d2800);
+  color: var(--material-theme-sys-light-high-contrast-on-primary, #fff);
+
+}
+
+.academic-reports .test-btn:hover {
+  color: #000;
+}
+
+/* academic reports marks page-12,13,14 */
+.academic-reports-marks {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  height: fit-content;
+  top: 2%;
+  margin-bottom: 2%;
+}
+
+.academic-reports-marks .container {
+  width: 90%;
+  max-width: 800px;
+  padding: 8px;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 8px;
+  margin-bottom: 5%;
+}
+
+.academic-reports-marks .container .sub-card {
+  border: 1px solid black;
+  border-bottom: 0 solid black;
+}
+
+.academic-reports-marks .container .card .sub-card .cs {
+  top: 0.75rem;
+  position: relative;
+  justify-self: center;
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.academic-reports-marks .container .sub-card div,
+.academic-reports-marks .container .sub-card p {
+  position: relative;
+  bottom: 1.5rem;
+  height: 5rem;
+  height: fit-content;
+}
+
+.academic-reports-marks .card {
+  position: relative;
+  background: transparent;
+  height: fit-content;
+}
+
+.academic-reports-marks .card .title {
+  margin-top: 0.75rem;
+  font-size: clamp(2.25rem, 8vw, 3.2rem);
+  width: 100%;
+}
+
+.academic-reports-marks .card .sub-title {
+  font-size: clamp(2rem, 2.5vw, 2.5rem);
+}
+
+.academic-reports-marks p {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.academic-reports-marks table {
+  position: relative;
+  width: 100%;
+  border-collapse: collapse;
+  /* bottom: 1rem; */
+  margin-bottom: 0;
+}
+
+.academic-reports-marks table,
+.academic-reports-marks th,
+.academic-reports-marks td {
+  border: 1px solid #000;
+}
+
+.academic-reports-marks th,
+.academic-reports-marks td {
+  padding: 4px;
+  text-align: center;
+}
+
+.academic-reports-marks th {
+  background: transparent;
+}
+
+.academic-reports-marks .total-row {
+  background: transparent;
+}
+
+.academic-reports-marks .grade-row {
+  background: transparent;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 39% 86% auto;
+  border-bottom: 1px solid black;
+  padding: 4px;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+}
+
+.academic-reports-marks button {
+  margin-top: 20px;
+  font-size: 18px;
+  cursor: pointer;
+  border: 2px solid black;
+  border-radius: 1.5rem;
+  background: transparent;
+  display: flex;
+  flex-direction: row;
+  justify-self: end;
+}
+
+.academic-reports-marks .back-btn {
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  margin-bottom: 10px;
+  color: black;
+  position: relative;
+  left: 2%;
+  top: 1.5rem;
+}
+
+.academic-reports-marks .home-btn {
+  position: relative;
+  left: 95%;
+  top: 1.8rem;
+  cursor: pointer;
+}
+
+
+.academic-reports-marks button:hover {
+  background: darkblue;
+}
+
+/* class teacher home page (page-21) */
+.class-teacher-home-page {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  min-height: 100vh;
+}
+
+.class-teacher-home-page .title-container {
+  background: transparent;
+  text-align: center;
+  padding: 1rem;
+  flex: 0 1 auto;
+  font-weight: clamp(800, 2vw, 400, 600);
+}
+
+.class-teacher-home-page .title {
+  font-size: clamp(2.25rem, 2.5vw, 3rem);
+  width: 45%;
+  position: relative;
+  display: flex;
+  justify-self: center;
+  font-size: clamp(2rem, 9vw, 3rem);
+  max-width: 26.5rem;
+  min-width: 8.75rem;
+}
+
+.class-teacher-home-page .cs-container {
+  display: flex;
+  flex-direction: row;
+  justify-self: center;
+  align-self: center;
+  width: 70%;
+}
+
+.class-teacher-home-page .cs {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-around;
+  font-size: clamp(1.25rem, 3vw, 2rem);
+}
+
+.class-teacher-home-page .btn-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  margin-top: 3rem;
+}
+
+.class-teacher-home-page .btn-group button {
+  margin: 0.5rem;
+  padding: 1rem;
+  font-size: 1rem;
+  border-radius: 1.5rem;
+  cursor: pointer;
+  width: 80%;
+  max-width: 300px;
+  height: 12%;
+  max-height: 40px;
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.class-teacher-home-page .back-btn {
+  position: relative;
+  left: 5%;
+  top: 10%;
+}
+
+.class-teacher-home-page .home-btn {
+  position: relative;
+  left: 90%;
+  bottom: 1.5rem;
+  cursor: pointer;
+}
+
+
+.class-teacher-home-page .btn-group button:hover {
+  background-color: #45a049;
+}
+
+/* all student page-22 */
+.all-student {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.all-student .container {
+  max-width: 800px;
+  width: 100%;
+  padding: 20px;
+  border-radius: 5px;
+  height: 100vh;
+  position: relative;
+  bottom: 4rem;
+}
+
+.all-student .title {
+  font-size: clamp(2.25rem, 2.5vw, 3rem);
+  position: relative;
+  display: flex;
+  justify-self: center;
+  font-size: clamp(2rem, 9vw, 3rem);
+  max-width: 26.5rem;
+  min-width: 8.75rem;
+}
+
+.all-student .profile-header {
+  display: flex;
+  justify-self: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  font-size: clamp(1.25rem, 3vw, 2rem);
+  width: 80%;
+}
+
+.all-student .student-list,
+.student-list td button {
+  width: 100%;
+  border-collapse: collapse;
+  background: transparent;
+  border: none;
+}
+
+.all-student .student-list th,
+.student-list td {
+  padding: 10px;
+  border: 1px solid black;
+  text-align: center;
+}
+
+.all-student .alert-content .close {
+  display: flex;
+  justify-content: end;
+  padding-right: 0.25rem;
+  border: none;
+}
+
+.all-student .alertNotify {
+  position: relative;
+  width: 8.75rem;
+  border: 1px solid black;
+  bottom: clamp(33.7rem, 34.5rem, 33.7rem);
+  left: 62%;
+  background-color: rgb(211, 211, 185);
+}
+
+.all-student .alertNotify button {
+  width: 100%;
+  background: transparent;
+  border: none;
+}
+
+.all-student .back-btn {
+  position: relative;
+  left: 5%;
+  top: 4%;
+}
+
+
+.all-student .home-btn {
+  position: relative;
+  left: 90%;
+  bottom: 0.5rem;
+  cursor: pointer;
+}
+
+.all-student .view-button:hover {
+  background-color: #45a049;
+}
+
+/* add student page-22 */
+.add-student {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  height: fit-content;
+}
+
+.add-student .sub-container .title {
+  position: relative;
+  font-size: clamp(2.25rem, 8vw, 3.2rem);
+  width: 100%;
+  max-width: 37.5rem;
+  min-width: 8.75rem;
+  bottom: 1.4375rem;
+  text-align: center;
+}
+
+.add-student .container {
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  width: clamp(250px, 80vw, 500px);
+}
+
+.add-student .profile-pic {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.add-student .profile-pic img {
+  position: relative;
+  width: 22vw;
+  height: 22vw;
+  max-width: 8.125rem;
+  max-height: 8.125rem;
+  bottom: 1.25rem;
+  border-radius: 50%;
+  background: lightgray;
+}
+
+.add-student form {
+  display: flex;
+  flex-direction: column;
+}
+
+.add-student label {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.add-student input,
+.add-student select {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 5px;
+  width: 100%;
+}
+
+.add-student .row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.add-student .row div {
+  width: 48%;
+}
+
+.add-student .checkbox {
+  position: relative;
+  display: flex;
+  align-items: center;
+  bottom: 5.5rem;
+  left: 9.5rem;
+}
+
+.add-student .container .sub-container-2 {
+  position: relative;
+  margin-top: -6%;
+}
+
+
+.add-student .checkbox .same-as-parent-i {
+  position: relative;
+  right: 24%;
+}
+
+.add-student .checkbox .same-as-parent-l {
+  position: relative;
+  right: 52%;
+  width: 63%;
+}
+
+.add-student button {
+  display: flex;
+  justify-self: center;
+  width: 80%;
+  color: white;
+  border: none;
+  padding: 10px;
+  margin-top: 15px;
+  border-radius: 3px;
+  justify-content: center;
+  background: var(--material-theme-sys-light-high-contrast-primary, #0d2800);
+  cursor: pointer;
+}
+
+.add-student .delete-btn {
+  background: none;
+}
+
+.add-student .container .back-btn {
+  position: relative;
+  right: 10%;
+}
+
+.add-student .home-btn {
+  position: relative;
+  left: 98%;
+  /* top: 0.5rem; */
+  bottom: 1.5rem;
+  cursor: pointer;
+}
+
+
+.add-student button:hover {
+  background-color: #1d4f87;
+}
+
+/* select date for attendance page-24 */
+.select-date-for-attendance {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  width: 100vw;
+  bottom: 2%;
+}
+
+.select-date-for-attendance .container {
+  position: relative;
+  top: 3%;
+  text-align: center;
+  width: 100%;
+  max-height: 89%;
+  max-width: 400px;
+  background: transparent;
+}
+
+.select-date-for-attendance .upper-side {
+  position: relative;
+  padding: 20px;
+  height: 12vh;
+  bottom: 30px;
+  border-top-left-radius: 1.5rem;
+  border-top-right-radius: 1.5rem;
+  border: 1px solid black;
+  border-bottom: none;
+}
+
+.select-date-for-attendance .sub-container {
+  padding: 0.5rem;
+  position: relative;
+  bottom: 1.9rem;
+  height: 56.5vh;
+  border: 1px solid black;
+  border-bottom-right-radius: 1.5rem;
+  border-bottom-left-radius: 1.5rem;
+}
+
+.select-date-for-attendance .title {
+  position: relative;
+  bottom: 2.25rem;
+  font-size: clamp(2.25rem, 8vw, 3.2rem);
+}
+
+.select-date-for-attendance .more-info-btn {
+  position: relative;
+  border: none;
+  bottom: 2.5rem;
+  left: 8.5rem;
+  font-size: 0.75rem;
+  background: transparent;
+}
+
+
+.select-date-for-attendance .month-year {
+  position: relative;
+  font-size: 24px;
+  right: 80px;
+  font-weight: bold;
+  margin: 10px 0;
+  bottom: 1rem;
+}
+
+.select-date-for-attendance .date-calender {
+  position: relative;
+  left: 60px;
+  top: 1.5rem;
+  left: 5rem;
+  background: transparent;
+  border-radius: 1.5rem;
+  padding: 0 0.25rem;
+}
+
+.select-date-for-attendance .days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  font-weight: bold;
+  margin-bottom: 2px;
+  position: relative;
+  bottom: 0.45rem;
+}
+
+.select-date-for-attendance .days div {
+  margin: 0.25rem;
+  border-radius: 50%;
+}
+
+.select-date-for-attendance .day,
+.select-date-for-attendance .dates button {
+  text-align: center;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 50%;
+}
+
+.select-date-for-attendance .dates button {
+  position: relative;
+  bottom: 0.7rem;
+}
+
+.select-date-for-attendance .select-date {
+  position: relative;
+  bottom: 1rem;
+  right: 4rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.select-date-for-attendance .dates {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 4px;
+  height: 40vh;
+}
+
+.select-date-for-attendance .holiday {
+  color: red;
+  border: 2px solid red;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.select-date-for-attendance .absent {
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.select-date-for-attendance .yellow {
+  background-color: gold;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.select-date-for-attendance .view-btn {
+  border-radius: 3px;
+  color: white;
+  background: var(--material-theme-sys-light-high-contrast-primary, #0d2800);
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  width: 100%;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.select-date-for-attendance .back-btn {
+  position: relative;
+  right: 45%;
+  bottom: 43%;
+}
+
+.select-date-for-attendance .home-btn {
+  position: relative;
+  left: 48%;
+  bottom: 2rem;
+}
+
+.select-date-for-attendance .various-color-roles .title {
+  font-size: clamp(1.5rem, 2vw, 3.2rem);
+}
+
+
+.select-date-for-attendance .various-color-roles .close-svg {
+  position: relative;
+}
+
+.select-date-for-attendance button.btn:hover {
+  background-color: #0056b3;
+}
+
+
+
+/* take attendance page-25,26 */
+.take-attendance {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.take-attendance .container {
+  width: 90%;
+  height: 100vh;
+  max-width: 600px;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.take-attendance .header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.take-attendance .title {
+  margin: 0;
+  font-size: clamp(2.25rem, 8vw, 3.2rem);
+}
+
+.take-attendance .class-info {
+  display: flex;
+  justify-content: space-between;
+  font-size: clamp(1rem, 2vw, 1.5rem);
+  margin: 10px 0;
+}
+
+.take-attendance table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.take-attendance table th,
+.take-attendance table td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.take-attendance .switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 24px;
+}
+
+.take-attendance .switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.take-attendance .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: .4s;
+  border-radius: 1rem;
+}
+
+.take-attendance .slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  border-radius: 1rem;
+  transition: .4s;
+}
+
+.take-attendance input:checked+.present {
+  background-color: green;
+}
+
+.take-attendance input:checked+.absent {
+  background-color: red;
+}
+
+.take-attendance input:checked+.slider:before {
+  transform: translateX(16px);
+}
+
+.take-attendance .send-updates {
+  margin-top: 20px;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  display: block;
+}
+
+
+.take-attendance .back-btn {
+  position: relative;
+  left: 5%;
+  bottom: 45%;
+  cursor: pointer;
+}
+
+.take-attendance .home-btn {
+  position: relative;
+  left: 87%;
+  bottom: 45%;
+  cursor: pointer;
+}
+
+/* Button styles for toggle */
+.toggle-btn {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.toggle-present {
+  background-color: #4CAF50;
+  /* Green for Present */
+}
+
+.toggle-absent {
+  background-color: #F44336;
+  /* Red for Absent */
+}
+
+
+.take-attendance .toggle-btn::before {
+  content: "";
+  width: 18px;
+  height: 18px;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  left: 2px;
+  top: 1px;
+  transition: 0.3s;
+}
+
+.take-attendance .toggle-btn.active {
+  background: green;
+}
+
+.take-attendance .toggle-btn.active::before {
+  left: 20px;
+}
+
+.take-attendance .send-updates {
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+  border: none;
+  background: rgb(26, 20, 20);
+  color: rgb(245, 237, 237);
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px black;
+}
+
+/* select student to add report page-27 */
+.select-student-add-report {
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.select-student-add-report .container {
+  width: 90%;
+  max-width: 600px;
+  margin: auto;
+  border-radius: 10px;
+}
+
+.select-student-add-report .title {
+  position: relative;
+  bottom: 3rem;
+  font-size: clamp(2.25rem, 8vw, 3.2rem);
+}
+
+.select-student-add-report .class-info {
+  display: flex;
+  justify-content: space-between;
+  font-size: clamp(1.5rem, 2vw, 2rem);
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.select-student-add-report .sub-title {
+  text-decoration: underline;
+  font-size: clamp(1.3rem, 9vw, 1.6rem);
+  margin-bottom: 10px;
+  text-align: left;
+  position: relative;
+  left: 10%;
+}
+
+.select-student-add-report .student-list {
+  list-style: none;
+  padding: 0;
+}
+
+.select-student-add-report .student-list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.select-student-add-report .circle {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 50%;
+  border: 2px solid black;
+  text-align: center;
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.select-student-add-report .back-btn {
+  position: relative;
+  right: 55%;
+  top: 1rem;
+}
+
+.select-student-add-report .home-btn {
+  position: relative;
+  left: 50%;
+  bottom: 1rem;
+}
+
+/* add report page-28 */
+.add-report {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.add-report .container {
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 90%;
+  max-width: 600px;
+  margin-bottom: 1rem;
+  height: 90%;
+  position: relative;
+  top: 2%;
+}
+
+.add-report .title {
+  position: relative;
+  bottom: 3rem;
+  font-size: clamp(2.25rem, 8vw, 3.2rem);
+}
+
+.add-report .sub-title {
+  position: relative;
+  bottom: 1.25rem;
+  font-weight: bold;
+  display: block;
+  font-size: clamp(1.3rem, 9vw, 1.6rem);
+}
+
+.add-report select {
+  position: relative;
+  width: 32%;
+  padding: 8px;
+  bottom: 1.25rem;
+  border-radius: 5px;
+  border: 1px solid black;
+  background: transparent;
+  text-align: center;
+}
+
+.add-report .report-btn-container {
+  position: relative;
+  top: 1rem;
+}
+
+.add-report .report-btn {
+  width: 70%;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 20px;
+  border: 1px solid black;
+  background: transparent;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.add-report .back-btn {
+  position: relative;
+  left: 5%;
+  bottom: 45%;
+}
+
+
+.add-report .home-btn {
+  position: relative;
+  left: 85%;
+  bottom: 44%;
+  cursor: pointer;
+}
+
+.add-report .report-btn:hover {
+  background: #f0f0f0;
+}
+
+/* add report of exam page-29,30,31 */
+.add-report-of-exam {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  height: fit-content;
+  top: 1%;
+  margin-bottom: 2%;
+}
+
+.add-report-of-exam .container {
+  width: 80%;
+  max-width: 800px;
+  padding: 8px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.add-report-of-exam .container .sub-card {
+  border: 1px solid black;
+  border-bottom: 0 solid black;
+}
+
+.add-report-of-exam .card .student-name,
+.add-report-of-exam .container .card .sub-card .class,
+.add-report-of-exam .container .card .sub-card .section {
+  display: flex;
+  left: 1rem;
+  margin-top: 0.5rem;
+  flex-direction: row;
+  justify-self: center;
+}
+
+.add-report-of-exam .card .student-name {
+  position: relative;
+  top: 0.5rem;
+}
+
+.add-report-of-exam .card .student-name label {
+  position: relative;
+  top: 0.2rem;
+}
+
+.add-report-of-exam .container .card .sub-card .cs {
+  top: 0.75rem;
+
+  position: relative;
+  justify-self: center;
+  width: 95%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.add-report-of-exam .container .card .sub-card .class,
+.add-report-of-exam .container .card .sub-card .section {
+  width: 12%;
+}
+
+.add-report-of-exam .container .card .sub-card .class,
+.add-report-of-exam .container .card .sub-card .section {
+  margin-right: 4.75rem;
+}
+
+
+.add-report-of-exam .card .class label,
+.add-report-of-exam .card .section label {
+  position: relative;
+  top: 0.25rem;
+}
+
+
+.add-report-of-exam .card .class input,
+.add-report-of-exam .card .section input {
+  position: relative;
+  width: 1.75rem;
+}
+
+.add-report-of-exam .container .sub-card div,
+.add-report-of-exam .container .sub-card p {
+  position: relative;
+  bottom: 1.5rem;
+  height: 5rem;
+  height: fit-content;
+}
+
+.add-report-of-exam .card {
+  position: relative;
+  background: transparent;
+  height: fit-content;
+}
+
+.add-report-of-exam .card .title {
+  position: relative;
+  top: 0.01rem;
+  font-size: clamp(2.25rem, 8vw, 3.2rem);
+  width: 100%;
+}
+
+.add-report-of-exam .card .sub-title {
+  font-size: clamp(2rem, 2.5vw, 2.5rem);
+  position: relative;
+}
+
+.add-report-of-exam p {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.add-report-of-exam table {
+  position: relative;
+  width: 100%;
+  border-collapse: collapse;
+  /* bottom: 1rem; */
+  margin-bottom: 0;
+}
+
+.add-report-of-exam table,
+.add-report-of-exam th,
+.add-report-of-exam td {
+  border: 1px solid #000;
+}
+
+.add-report-of-exam th,
+.add-report-of-exam td,
+.add-report-of-exam input {
+  padding: 4px;
+  text-align: center;
+}
+
+.add-report-of-exam th,
+.add-report-of-exam input {
+  background: transparent;
+}
+
+.add-report-of-exam input {
+  position: relative;
+  width: 100%;
+  border: none;
+}
+
+.add-report-of-exam .total-row {
+  background: transparent;
+}
+
+.add-report-of-exam .grade-row {
+  background: transparent;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 39% 86% auto;
+  border-bottom: 1px solid black;
+  padding: 4px;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+}
+
+.add-report-of-exam button {
+  margin-top: 20px;
+  font-size: 14px;
+  cursor: pointer;
+  border: 2px solid black;
+  border-radius: 1.5rem;
+  background: var(--material-theme-sys-light-high-contrast-primary, #0d2800);
+  display: flex;
+  flex-direction: row;
+  justify-self: center;
+  color: white;
+  padding: 4px 12px;
+}
+
+
+
+.add-report-of-exam .back-btn {
+  position: relative;
+  left: 4%;
+  bottom: 45%;
+}
+
+.add-report-of-exam .home-btn {
+  position: relative;
+  left: 89%;
+  top: 0.5rem;
+  bottom: 44%;
+  cursor: pointer;
+}
+
+.add-report-of-exam button:hover {
+  background: darkblue;
+}
+
+/* admin home page(page-32)  */
+.admin-home-page {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+}
+
+.admin-home-page .title {
+  position: relative;
+  top: 2%;
+  display: flex;
+  align-self: center;
+  font-size: clamp(2.25rem, 8vw, 3.2rem);
+  width: 55%;
+  max-width: 25.5rem;
+  min-width: 14.5rem;
+  text-align: center;
+}
+
+.admin-home-page .button-container {
+  position: relative;
+  top: 3rem;
+  height: 70%;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 90%;
+  max-width: 600px;
+  border-radius: 1rem;
+}
+
+.admin-home-page .button-container button {
+  background: transparent;
+  border: 1px solid black;
+  border-radius: 1rem;
+  width: 90%;
+  max-width: 55%;
+}
+
+.admin-home-page .home-btn {
+  position: relative;
+  left: 90%;
+  top: 0.5rem;
+  cursor: pointer;
+}
+
+.admin-home-page .button-container button:hover {
+  background-color: #8545a0;
+}
+
+/* select classs for attendance */
+.select-class-for-attendance {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.select-class-for-attendance .container {
+  border-radius: 10px;
+  text-align: center;
+  width: 350px;
+  position: relative;
+  top: 2%;
+  right: 4%;
+  height: 90vh;
+}
+
+.select-class-for-attendance .title {
+  margin-bottom: 20px;
+  font-size: clamp(2.25rem, 8vw, 3.2rem);
+}
+
+.select-class-for-attendance .dropdowns {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30%;
+}
+
+.select-class-for-attendance .dropdowns label {
+  font-size: clamp(1rem, 2vw, 1.25rem);
+}
+
+.select-class-for-attendance .dropdown {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.select-class-for-attendance label {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.select-class-for-attendance select {
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 80px;
+  text-align: center;
+}
+
+.select-class-for-attendance .view-btn {
+  border-radius: 3px;
+  color: white;
+  background: var(--material-theme-sys-light-high-contrast-primary, #0d2800);
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  margin-top: 90%;
+  width: 100%;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.select-class-for-attendance .back-btn {
+  position: relative;
+  left: 5%;
+  bottom: 43%;
+}
+
+.select-class-for-attendance .home-btn {
+  position: relative;
+  left: 85%;
+  bottom: 45%;
+  cursor: pointer;
+}
+
+.select-class-for-attendance .view-btn:hover {
+  background: #333;
+}
+
+/* manage class taecher page-36*/
+.manage-class-teacher {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.manage-class-teacher .container {
+  width: 90%;
+  height: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: auto;
+}
+
+.manage-class-teacher .title {
+  font-size: clamp(2.25rem, 8vw, 3.2rem);
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.manage-class-teacher table {
+  width: 90%;
+  max-width: 800px;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.manage-class-teacher th,
+.manage-class-teacher td {
+  padding: 12px;
+  border: 1px solid black;
+  text-align: center;
+}
+
+.manage-class-teacher th {
+  color: rgb(25, 21, 21);
+}
+
+.manage-class-teacher select {
+  padding: 8px;
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  background: transparent;
+  border: none;
+}
+
+.manage-class-teacher .back-btn {
+  position: relative;
+  left: 5%;
+  bottom: 43%;
+}
+
+.manage-class-teacher .home-btn {
+  position: relative;
+  left: 87%;
+  bottom: 43%;
+  cursor: pointer;
+}
+
+/* all teacher page-37 */
+.all-teacher {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.all-teacher .container {
+  width: 90%;
+  height: 100vh;
+  max-width: 500px;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: left;
+}
+
+.all-teacher .container .title {
+  text-align: center;
+  font-size: clamp(2.25rem, 8vw, 3.2rem);
+}
+
+.all-teacher .sub-title {
+  margin-top: 15px;
+  border-bottom: 2px solid black;
+  display: inline-block;
+  font-size: clamp(1.4rem, 8vw, 1.5rem);
+}
+
+.all-teacher .teacher-list {
+  list-style: none;
+  margin-top: 10px;
+}
+
+.all-teacher .teacher-list li {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.all-teacher .circle {
+  width: 30px;
+  height: 30px;
+  border: 2px solid black;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  font-size: 14px;
+}
+
+.all-teacher .back-btn {
+  position: relative;
+  bottom: 44%;
+  left: 5%;
+}
+
+.all-teacher .home-btn {
+  position: relative;
+  left: 90%;
+  bottom: 44%;
+  cursor: pointer;
+}
+
+/* mark holiday page-38 */
+.mark-holiday {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: fit-content;
+  width: 100vw;
+}
+
+.mark-holiday .container {
+  position: relative;
+  width: 90%;
+  max-width: 600px;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  height: fit-content;
+  margin-bottom: 1rem;
+}
+
+.mark-holiday .title {
+  text-align: center;
+  font-size: clamp(2.25rem, 8vw, 3.2rem);
+}
+
+.mark-holiday .container .calendra-btns {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-self: right;
+  /* right: 2rem; */
+  bottom: 2.75rem;
+}
+
+.mark-holiday .container .month-selector {
+  font-size: 16px;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-self: left;
+  font-weight: bold;
+  margin-bottom: 10px;
+  /* left: 2rem; */
+}
+
+.mark-holiday .month-selector select {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  background: transparent;
+  text-align: center;
+  border: none;
+}
+
+.mark-holiday select {
+  padding: 5px;
+  font-size: 14px;
+}
+
+.mark-holiday p {
+  position: relative;
+  bottom: 1rem;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.mark-holiday .calendar {
+  position: relative;
+  bottom: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.mark-holiday table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.mark-holiday td {
+  padding: 10px;
+  text-align: center;
+  font-size: 16px;
+}
+
+.mark-holiday input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+.mark-holiday .center {
+  text-align: center;
+}
+
+.mark-holiday .button-group {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.mark-holiday .save-btn {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 1.5rem;
+  font-size: 16px;
+  cursor: pointer;
+  width: 20%;
+}
+
+.mark-holiday .save-btn:hover {
+  background-color: #333;
+}
+
+.mark-holiday .nav-btn {
+  background-color: gray;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 25%;
+}
+
+.mark-holiday .nav-btn:hover {
+  background-color: #555;
+}
+
+.mark-holiday .back-btn {
+  position: relative;
+  left: 2rem;
+  bottom: 21.5rem;
+}
+
+.mark-holiday .home-btn {
+  position: relative;
+  left: 87%;
+  bottom: 21.5rem;
+  cursor: pointer;
+}
+
+/* add teacher page-39 */
+.add-teacher {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+.add-teacher .container {
+  position: relative;
+  width: 90%;
+  max-width: 600px;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  overflow: auto;
+}
+
+.add-teacher .title {
+  font-size: clamp(2.25rem, 8vw, 3.2rem);
+}
+
+.add-teacher form {
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+}
+
+.add-teacher label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.add-teacher input {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 100%;
+  background: transparent;
+  height: 36px;
+}
+
+.add-teacher button {
+  padding: 12px;
+  border-radius: 3px;
+  background: var(--material-theme-sys-light-high-contrast-primary, #0d2800);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 25%;
+}
+
+.add-teacher button:hover {
+  background-color: #333;
+}
+
+.add-teacher .back-btn {
+  position: relative;
+  left: 10%;
+}
+
+.add-teacher .home-btn {
+  position: relative;
+  left: 80%;
+  top: 0.5rem;
+  cursor: pointer;
+}
+
+/* add-class page(40) */
+.add-class {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.add-class .container {
+  border-radius: 10px;
+  text-align: center;
+  width: 350px;
+  position: relative;
+  height: 100vh;
+  margin-top: 1rem;
+}
+
+.add-class .container .back-btn {
+  position: relative;
+  right: 11rem;
+  top: 2.5rem;
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.add-class .title {
+  margin-bottom: 20px;
+  font-size: clamp(2.25rem, 8vw, 3.2rem);
+}
+
+.add-class .dropdowns {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30%;
+}
+
+.add-class .dropdowns label {
+  font-size: clamp(1rem, 2vw, 1.25rem);
+}
+
+.add-class .dropdown {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.add-class label {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.add-class select {
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 140px;
+  text-align: center;
+}
+
+.add-class .view-btn {
+  border-radius: 3px;
+  color: white;
+  background: var(--material-theme-sys-light-high-contrast-primary, #0d2800);
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  margin-top: 90%;
+  width: 100%;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.add-class .back-btn {
+  position: relative;
+  left: 5%;
+  bottom: 45%;
+}
+
+.add-class .home-btn {
+  position: relative;
+  left: 85%;
+  bottom: 44%;
+  cursor: pointer;
+}
+
+.add-class .view-btn:hover {
+  background: #333;
+}
+
+/*  contact developer page-41 */
+.contact-developer {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.contact-developer .container {
+  height: 100vh;
+  height: fit-content;
+  padding: 20px;
+  width: 90%;
+  max-width: 600px;
+  text-align: center;
+  position: relative;
+}
+
+.contact-developer .sub-container {
+  margin-top: 10rem;
+}
+
+.contact-developer .title {
+  display: flex;
+  justify-self: center;
+  width: 80%;
+  font-size: clamp(2.25rem, 8vw, 3.2rem);
+}
+
+.contact-developer label {
+  display: block;
+  text-align: left;
+  font-size: 14px;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.contact-developer input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  text-align: center;
+}
+
+.contact-developer .back-btn {
+  position: absolute;
+  top: 4%;
+  left: 5%;
+}
+
+.contact-developer .home-btn {
+  position: relative;
+  left: 90%;
+  top: 4%;
+  cursor: pointer;
+}
