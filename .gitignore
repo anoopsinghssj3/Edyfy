@@ -1,3 +1,7 @@
+#history
+*.history
+*./history/src
+
 # Logs
 logs
 *.log
